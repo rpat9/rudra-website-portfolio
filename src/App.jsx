@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Hero from "./components/Hero"
+import Projects from "./components/Projects"
 
 export default function App() {
 
@@ -7,6 +7,7 @@ export default function App() {
     <>
       <div>
         <Hero />
+        <Projects />
       </div>
     </>
     

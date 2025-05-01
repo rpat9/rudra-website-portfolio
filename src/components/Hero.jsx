@@ -24,7 +24,7 @@ export default function Hero() {
 
                             options={{
                                 autoStart: true,
-                                delay: 300,
+                                delay: 200,
                                 loop: false,
                             }}
                             />
