@@ -64,5 +64,5 @@ jobs:
         with:
           app-name: 'rudrapatel-website'
           slot-name: 'Production'
-          package: ./vite-app
+          package: .
           
