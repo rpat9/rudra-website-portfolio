@@ -27,7 +27,14 @@ jobs:
         run: |
           npm install
           npm run build
-          cp web.config dist/web.config
+          
+      - name: Copy web.config to dist
+        run: |
+          cp web.config dist/
+          
+      - name: List dist directory contents for debugging
+        run: |
+          dir dist
       
       - name: Upload Vite build for deployment
         uses: actions/upload-artifact@v4
@@ -50,6 +57,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: vite-app
+          
+      - name: List downloaded files for debugging
+        run: |
+          ls -la
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -65,4 +76,3 @@ jobs:
           app-name: 'rudrapatel-website'
           slot-name: 'Production'
           package: .
-          
