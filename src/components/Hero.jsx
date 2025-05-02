@@ -1,4 +1,4 @@
-import rudraPic from "../assets/rudra-pic.jpg";
+import rudraPic from "../assets/rudra-pic.JPG";
 import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
