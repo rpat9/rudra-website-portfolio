@@ -4,32 +4,41 @@
 
 
 :root {
-  --color-primary: #4f46e5; /* Indigo-600 */
-  --color-accent: #2563eb;  /* Blue-600 */
-  --color-accent-dark: #1c373b; /* Dark teal - kept for dark mode */
-  --color-bg: #f9fafb;      /* Gray-50 */
-  --color-text: #111827;    /* Gray-900 */
-  --color-text-secondary: #4b5563; /* Gray-600 - Secondary text in light mode */
-  --color-dark-bg: #1f2937; /* Gray-800 */
-  --color-dark-text: #f3f4f6; /* Gray-100 */
-  --color-dark-text-secondary: #9ca3af; /* Gray-400 - Secondary text in dark mode */
+  --color-primary: #4f46e5;             /* Indigo-600 */
+  --color-accent: #2563eb;              /* Blue-600 */
+  --color-accent-dark: #1c373b;         /* Dark teal (fallback / legacy) */
+  --color-bg: #f9fafb;                  /* Gray-50 */
+  --color-text: #111827;                /* Gray-900 */
+  --color-text-secondary: #4b5563;      /* Changed from Gray-800 to Gray-600 */
+  --card-bg: #ffffff;                   /* Light card background */
+
+  --color-dark-bg: #1f2937;             /* Gray-800 */
+  --color-dark-text: #f3f4f6;           /* Gray-100 */
+  --color-dark-text-secondary: #9ca3af; /* Gray-400 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-accent: #67e8f9; /* Cyan-300 */
-    --color-text-secondary: var(--color-dark-text-secondary);
-  }
-}
+/* Remove the media query that was causing the dark mode to apply based on system preference */
+/* We'll rely solely on the toggle button instead */
 
 body {
-  @apply font-sans bg-[var(--color-bg)] text-[var(--color-text)] tracking-wide;
+  @apply font-sans tracking-wide;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: 'Inter', sans-serif;
   transition: background-color 0.3s, color 0.3s;
 }
 
-@layer components {
+/* Apply dark mode styles explicitly only when the .dark class is present */
+.dark body {
+  background-color: var(--color-dark-bg);
+  color: var(--color-dark-text);
+}
 
+.dark .card {
+  background-color: #374151; /* Gray-700 for dark mode cards */
+}
+
+@layer components {
   .btn-primary {
     @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-white hover:bg-indigo-700 transition;
   }
@@ -39,18 +48,17 @@ body {
   }
 
   .card {
-    @apply p-6 rounded-2xl shadow-md bg-white dark:bg-[var(--color-dark-bg)] dark:text-[var(--color-dark-text)] transition;
+    @apply p-6 rounded-2xl shadow-md transition;
+    background-color: var(--card-bg);
+    color: var(--color-text);
   }
 
-  /* New utility class for secondary text */
   .text-secondary {
     @apply text-[var(--color-text-secondary)];
   }
-
 }
 
 @layer utilities {
-
   .fade-in {
     animation: fade-in 0.6s ease-out both;
   }
@@ -59,10 +67,19 @@ body {
     animation: float 3s ease-in-out infinite;
   }
 
+  .fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fade-in {
-
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -71,21 +88,13 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-
 }
 
 @keyframes float {
-
   0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-8px);
   }
-
-}
-
-.dark body {
-  background-color: var(--color-dark-bg);
-  color: var(--color-dark-text);
 }
