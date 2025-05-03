@@ -4,15 +4,16 @@
 
 
 :root {
-  --color-primary: #4f46e5;             /* Indigo-600 */
+  --color-primary: #4f46e5;             /* Indigo-600 #4f46e5;*/
+  --color-secondary: #100c61;
   --color-accent: #2563eb;              /* Blue-600 */
   --color-accent-dark: #1c373b;         /* Dark teal (fallback / legacy) */
-  --color-bg: #f9fafb;                  /* Gray-50 */
+  --color-bg: #CFD8DC;                  /* Shade of blue */
   --color-text: #111827;                /* Gray-900 */
   --color-text-secondary: #4b5563;      /* Changed from Gray-800 to Gray-600 */
   --card-bg: #ffffff;                   /* Light card background */
 
-  --color-dark-bg: #1f2937;             /* Gray-800 */
+  --color-dark-bg: #1f2937;               /* Gray-800 */
   --color-dark-text: #f3f4f6;           /* Gray-100 */
   --color-dark-text-secondary: #9ca3af; /* Gray-400 */
 }
@@ -32,6 +33,8 @@ body {
 .dark body {
   background-color: var(--color-dark-bg);
   color: var(--color-dark-text);
+  --color-bg: var(--color-dark-bg);
+  --color-text: var(--color-dark-text);
 }
 
 .dark .card {

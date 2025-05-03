@@ -3,13 +3,13 @@ import { Github, Linkedin, Mail, Phone, MapPin, Calendar } from "lucide-react";
 export default function Contact() {
 
   return (
-    <section id="contact" className="py-16 px-6 md:px-16 bg-gray-50 dark:bg-gray-800">
+    <section id="contact" className="py-16 px-6 md:px-16 bg-[var(--color-bg)]">
 
       <div className="container mx-auto max-w-4xl">
 
         <h2 className="section-title">Get In Touch</h2>
         
-        <p className="text-center text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-[var(--color-text)] mb-12 max-w-2xl mx-auto">
           Interested in working together or have questions? Here's how you can reach me.
         </p>
         

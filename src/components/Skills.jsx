@@ -16,13 +16,13 @@ export default function Skills() {
     ];
   
     return (
-      <section id="skills" className="py-16 px-6 md:px-16 bg-gray-50 dark:bg-gray-800">
+      <section id="skills" className="py-16 px-6 md:px-16 bg-[var(--color-bg)]">
 
         <div className="container mx-auto">
 
           <h2 className="section-title">My Skills</h2>
           
-          <p className="text-center text-gray-700 dark:text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-[var(--color-text)] mb-12 max-w-2xl mx-auto">
             Here are the technologies and tools I've been working with to build web applications.
           </p>
           

@@ -7,7 +7,7 @@ export default function Projects() {
 
             <h2 className="section-title">My Projects</h2>
 
-            <p className="text-center text-[var(--color-text-secondary)] mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-[var(--color-text)] mb-12 max-w-2xl mx-auto">
                 Here are some of my recent projects. Each one represents different challenges and learning opportunities I've embraced.
             </p>
 

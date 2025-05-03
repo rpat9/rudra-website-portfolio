@@ -32,7 +32,7 @@ export default function Hero() {
                     </span>
                 </h1>
 
-                <p className="text-lg md:text-xl mb-6 text-[var(--color-text-secondary)]">
+                <p className="text-lg md:text-xl mb-6 text-[var(--color-text)]">
                     Aspiring software engineer with hands-on experience building web applications in JavaScript, React, Node.js, and Python. Skilled in Agile development, cloud deployment, and creating scalable, user-focused solutions. Strong collaborator and problem-solver, recognized for improving performance and usability.
                 </p>
 
