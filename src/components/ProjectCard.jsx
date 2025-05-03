@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
 
     return (
         <div
-            className="card overflow-hidden transition-all duration-300 hover:shadow-xl bg-white dark:bg-gray-700"
+            className="card overflow-hidden transition-all duration-300 hover:shadow-xl "
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -67,14 +67,14 @@ export default function ProjectCard({ project }) {
                 {project.technologies.map((tech) => (
                     <span
                         key={tech}
-                        className="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 text-xs px-2 py-1 rounded-md"
+                        className="bg-indigo-900 text-indigo-200 text-xs px-2 py-1 rounded-md"
                     >
                         {tech}
                     </span>
                 ))}
             </div>
 
-            <p className="text-gray-700 dark:text-gray-200 text-sm">
+            <p className="text-[var(--color-text)] text-sm">
                 {project.description}
             </p>
         </div>

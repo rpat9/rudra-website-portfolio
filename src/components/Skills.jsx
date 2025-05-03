@@ -31,7 +31,7 @@ export default function Skills() {
             {skillGroups.map((group) => (
               <div 
                 key={group.category}
-                className="card fade-in-on-scroll bg-white dark:bg-gray-700"
+                className="card fade-in-on-scroll "
               >
 
                 <h3 className="text-xl font-semibold mb-4 text-[var(--color-primary)]">

@@ -13,7 +13,7 @@ export default function Contact() {
           Interested in working together or have questions? Here's how you can reach me.
         </p>
         
-        <div className="card fade-in-on-scroll max-w-3xl mx-auto bg-white dark:bg-gray-700">
+        <div className="card fade-in-on-scroll max-w-3xl mx-auto ">
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
@@ -26,7 +26,7 @@ export default function Contact() {
               <div className="space-y-6">
                 <a 
                   href="mailto:rudrap26176@gmail.com" 
-                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+                  className="flex items-center text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors"
                 >
                   <Mail className="mr-3" size={20} />
                   <span>rudrap26176@gmail.com</span>
@@ -34,13 +34,13 @@ export default function Contact() {
                 
                 <a 
                   href="tel:+12246079378"
-                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+                  className="flex items-center text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors"
                 >
                   <Phone className="mr-3" size={20} />
                   <span>(224) 607-9378</span>
                 </a>
                 
-                <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <div className="flex items-center text-[var(--color-text)]">
                   <MapPin className="mr-3" size={20} />
                   <span>Chicago, IL</span>
                 </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                   href="https://github.com/rpat9" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+                  className="flex items-center text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors"
                 >
                   <Github className="mr-3" size={20} />
                   <span>github.com/rpat9</span>
@@ -71,13 +71,13 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/rudrapatel09" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-700 dark:text-gray-300 hover:text-[var(--color-primary)] transition-colors"
+                  className="flex items-center text-[var(--color-text)] hover:text-[var(--color-primary)] transition-colors"
                 >
                   <Linkedin className="mr-3" size={20} />
                   <span>linkedin.com/in/rudrapatel09</span>
                 </a>
                 
-                <div className="flex items-center text-gray-700 dark:text-gray-300">
+                <div className="flex items-center text-[var(--color-text)]">
                   <Calendar className="mr-3" size={20} />
                   <span>Available for new opportunities</span>
                 </div>

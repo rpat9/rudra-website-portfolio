@@ -11,15 +11,13 @@
   --color-bg: #CFD8DC;                  /* Shade of blue */
   --color-text: #111827;                /* Gray-900 */
   --color-text-secondary: #4b5563;      /* Changed from Gray-800 to Gray-600 */
-  --card-bg: #ffffff;                   /* Light card background */
+  --card-bg:  #e6e6e6;                  /* Light card background #ffffff;*/
 
   --color-dark-bg: #1f2937;               /* Gray-800 */
   --color-dark-text: #f3f4f6;           /* Gray-100 */
   --color-dark-text-secondary: #9ca3af; /* Gray-400 */
 }
 
-/* Remove the media query that was causing the dark mode to apply based on system preference */
-/* We'll rely solely on the toggle button instead */
 
 body {
   @apply font-sans tracking-wide;
@@ -43,7 +41,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-white hover:bg-indigo-700 transition;
+    @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-white hover:bg-indigo-800 transition;
   }
 
   .section-title {
@@ -98,6 +96,6 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-12px);
   }
 }

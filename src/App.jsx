@@ -4,6 +4,7 @@ import Hero from "./components/Hero.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Contact from "./components/Contact.jsx";
+import RudraResume from "./components/RudraResume.jsx";
 
 export default function App() {
   useEffect(() => {
@@ -35,8 +36,9 @@ export default function App() {
         <Projects />
         <Skills />
         <Contact />
+        <RudraResume />
       </main>
-      <footer className="bg-gray-100 dark:bg-gray-800 py-8 text-center text-[var(--color-text-secondary)]">
+      <footer className="bg-[var(--color-bg)] py-8 text-center text-[var(--color-text)]">
         <div className="container mx-auto px-6">
           <p>© {new Date().getFullYear()} Rudra Patel. All rights reserved.</p>
           <p className="mt-2 text-sm">Built with React and Tailwind CSS</p>
