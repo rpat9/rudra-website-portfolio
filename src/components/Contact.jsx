@@ -96,15 +96,15 @@ export default function Contact() {
             </h4>
 
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <li className="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-4 py-2 rounded-lg text-center">
+              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
                 Full-time Positions
               </li>
 
-              <li className="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-4 py-2 rounded-lg text-center">
+              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
                 Part-time Positions
               </li>
 
-              <li className="bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-4 py-2 rounded-lg text-center">
+              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
                 Internships (All Seasons)
               </li>
 
@@ -117,7 +117,7 @@ export default function Contact() {
 
             <a 
               href="mailto:rudrap26176@gmail.com" 
-              className="btn-primary inline-flex items-center"
+              className="btn-primary inline-flex items-center btn-hover"
             >
               <Mail size={16} className="mr-2" />
               Send me an email

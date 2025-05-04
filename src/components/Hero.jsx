@@ -36,11 +36,11 @@ export default function Hero() {
                     Aspiring software engineer with hands-on experience building web applications in JavaScript, React, Node.js, and Python. Skilled in Agile development, cloud deployment, and creating scalable, user-focused solutions. Strong collaborator and problem-solver, recognized for improving performance and usability.
                 </p>
 
-                <a href="#projects" className="btn-primary mr-3">
+                <a href="#projects" className="btn-primary mr-5 btn-hover">
                     My Projects
                 </a>
 
-                <a href="#resume" className="btn-primary">
+                <a href="#resume" className="btn-primary btn-hover">
                     My Resume
                 </a>
 

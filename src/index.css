@@ -33,6 +33,7 @@ body {
   color: var(--color-dark-text);
   --color-bg: var(--color-dark-bg);
   --color-text: var(--color-dark-text);
+  --color-text-secondary: #b5c2d4;
 }
 
 .dark .card {
@@ -42,6 +43,10 @@ body {
 @layer components {
   .btn-primary {
     @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-white hover:bg-indigo-800 transition;
+  }
+
+  .btn-hover {
+    @apply hover:scale-105 transition duration-300 ease-in-out
   }
 
   .section-title {
