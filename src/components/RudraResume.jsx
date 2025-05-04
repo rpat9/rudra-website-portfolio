@@ -94,7 +94,7 @@ export default function RudraResume() {
                     
 
                     <div className="mt-4 mb-10">
-                        <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)] border-b border-gray-200 dark:border-gray-700 pb-2">
+                        <h3 className="text-2xl font-bold mb-4 text-[var(--color-primary)] border-b border-gray-700 pb-2">
                             Work Experience
                         </h3>
                 

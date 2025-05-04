@@ -89,9 +89,9 @@ export default function Contact() {
           </div>
           
           
-          <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-600">
+          <div className="mt-8 pt-6 border-t border-gray-600">
 
-            <h4 className="font-semibold mb-4 text-gray-800 dark:text-gray-200">
+            <h4 className="font-semibold mb-4 text-[var(--color-text)]">
               Currently Available For:
             </h4>
 
