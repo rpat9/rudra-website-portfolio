@@ -96,15 +96,15 @@ export default function Contact() {
             </h4>
 
             <ul className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
+              <li className="bg-[var(--color-primary)] text-[var(--button-text-color)] px-4 py-2 rounded-lg text-center">
                 Full-time Positions
               </li>
 
-              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
+              <li className="bg-[var(--color-primary)] text-[var(--button-text-color)] px-4 py-2 rounded-lg text-center">
                 Part-time Positions
               </li>
 
-              <li className="bg-indigo-800 text-indigo-100 px-4 py-2 rounded-lg text-center">
+              <li className="bg-[var(--color-primary)] text-[var(--button-text-color)] px-4 py-2 rounded-lg text-center">
                 Internships (All Seasons)
               </li>
 

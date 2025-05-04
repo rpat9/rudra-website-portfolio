@@ -91,9 +91,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="text-[var(--color-text)] " size={24} />
+              <X className="text-[var(--button-text-color)] " size={24} />
             ) : (
-              <Menu className="text-[var(--color-text)]" size={24} />
+              <Menu className="text-[var(--button-text-color)]" size={24} />
             )}
           </button>
         </div>

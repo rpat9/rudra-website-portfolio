@@ -43,7 +43,7 @@ export default function ProjectCard({ project }) {
                                 href={project.liveLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white text-[var(--color-primary)] px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+                                className="btn-primary btn-hover"
                             >
                                 Live Demo
                             </a>
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }) {
                 {project.technologies.map((tech) => (
                     <span
                         key={tech}
-                        className="bg-indigo-800 text-indigo-100 text-xs px-2 py-1 rounded-md"
+                        className="bg-[var(--color-primary)] text-[var(--button-text-color)] text-xs px-2 py-1 rounded-md"
                     >
                         {tech}
                     </span>

@@ -4,18 +4,19 @@
 
 
 :root {
-  --color-primary: #4f46e5;             /* Indigo-600 #4f46e5;*/
-  --color-secondary: #100c61;
-  --color-accent: #2563eb;              /* Blue-600 */
-  --color-accent-dark: #1c373b;         /* Dark teal (fallback / legacy) */
-  --color-bg: #CFD8DC;                  /* Shade of blue */
-  --color-text: #111827;                /* Gray-900 */
-  --color-text-secondary: #4b5563;      /* Changed from Gray-800 to Gray-600 */
-  --card-bg:  #e6e6e6;                  /* Light card background #ffffff;*/
-
-  --color-dark-bg: #1f2937;               /* Gray-800 */
-  --color-dark-text: #f3f4f6;           /* Gray-100 */
-  --color-dark-text-secondary: #9ca3af; /* Gray-400 */
+  --color-primary: #4f46e5;              /* Indigo-600 #4f46e5;*/
+  --color-secondary: #100c61; 
+  --color-accent: #2563eb;               /* Blue-600 */
+  --color-accent-dark: #1c373b;          /* Dark teal (fallback / legacy) */
+  --color-bg: #CFD8DC;                   /* Shade of blue */
+  --color-text: #111827;                 /* Gray-900 */
+  --color-text-secondary: #4b5563;       /* Changed from Gray-800 to Gray-600 */
+  --card-bg:  #e6e6e6;                   /* Light card background #ffffff;*/
+  --button-text-color: #ffffff;
+  --buton-hover-color: #283593;         /* #283593;*/
+  --color-dark-bg: #1f2937;              /* Gray-800 */
+  --color-dark-text: #f3f4f6;            /* Gray-100 */
+  --color-dark-text-secondary: #9ca3af;  /* Gray-400 */
 }
 
 
@@ -34,7 +35,15 @@ body {
   --color-bg: var(--color-dark-bg);
   --color-text: var(--color-dark-text);
   --color-text-secondary: #b5c2d4;
+  --color-primary: #D4D2F9;
+  --button-text-color: #052F62;
 }
+
+.dark .btn-primary:hover {
+  --button-hover-color: #AFAECE;
+  background-color: var(--button-hover-color);
+}
+
 
 .dark .card {
   background-color: #374151; /* Gray-700 for dark mode cards */
@@ -42,11 +51,15 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-white hover:bg-indigo-800 transition;
+    @apply inline-block px-6 py-2 rounded-lg bg-[var(--color-primary)] text-[var(--button-text-color)]  transition;
+  }
+
+  .btn-primary:hover {
+    @apply bg-[var(--buton-hover-color)];
   }
 
   .btn-hover {
-    @apply hover:scale-105 transition duration-300 ease-in-out
+    @apply hover:scale-105 transition duration-300 ease-in-out;
   }
 
   .section-title {

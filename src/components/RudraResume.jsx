@@ -137,7 +137,7 @@ export default function RudraResume() {
                                 <h4 className="text-lg font-semibold mb-2 text-[var(--color-text)]">Technical Skills</h4>
                                 <div className="flex flex-wrap gap-2">
                                     {resumeData.skills.technical.map((skill, i) => (
-                                        <span key={i} className="bg-indigo-800 text-indigo-100 px-3 py-1 rounded-full text-sm">
+                                        <span key={i} className="bg-[var(--color-primary)] text-[var(--button-text-color)] px-3 py-1 rounded-full text-sm">
                                             {skill}
                                         </span>
                                     ))}
@@ -149,7 +149,7 @@ export default function RudraResume() {
 
                                 <div className="flex flex-wrap gap-2">
                                     {resumeData.skills.soft.map((skill, i) => (
-                                        <span key={i} className="bg-indigo-800 text-indigo-100 px-3 py-1 rounded-full text-sm">
+                                        <span key={i} className="bg-[var(--color-primary)] text-[var(--button-text-color)] px-3 py-1 rounded-full text-sm">
                                             {skill}
                                         </span>
                                     ))}
