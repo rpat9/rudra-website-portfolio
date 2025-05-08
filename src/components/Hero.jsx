@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 py-12 fade-in">
+        <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-16 pt-24 pb-12 fade-in">
 
             <div className="flex-1 text-center md:text-left">
 

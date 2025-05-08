@@ -15,7 +15,7 @@ export default function RudraResume() {
                 My educational background, work experience, and qualifications.
             </p>
 
-            <div className="flex justify-center mb-8 space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center mb-8 space-y-4 sm:space-y-0 sm:space-x-4">
 
                 <button 
                     onClick={()=> setViewMode('preview')}
