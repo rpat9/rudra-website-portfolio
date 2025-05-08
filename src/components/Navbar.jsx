@@ -36,9 +36,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 py-4 transition-all duration-300 ${
-      isScrolled ? "bg-[var(--color-dark-bg)] shadow-md" : "bg-[var(--color-dark-bg)] "
-    }`}>
+    <nav className={`fixed w-full z-50 py-4 transition-all duration-300 bg-[var(--color-bg)]`}>
       <div className="container mx-auto px-6 md:px-16 flex justify-between items-center">
         
         <a href="#" className="text-xl font-bold text-[var(--color-primary)]">
@@ -51,7 +49,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-[var(--color-dark-text)] hover:text-[var(--color-primary)] transition-colors"
+              className="text-[var(--color-primary)] font-bold hover:underline"
             >
               {link.name}
             </a>
@@ -64,9 +62,9 @@ export default function Navbar() {
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? (
-              <Sun className="text-[var(--color-dark-text)]" size={20} />
+              <Sun className="text-[var(--color-primary)]" size={20} />
             ) : (
-              <Moon className="text-indigo-600" size={20} />
+              <Moon className="text-[var(--color-primary)]" size={20} />
             )}
           </button>
         </div>
@@ -79,9 +77,9 @@ export default function Navbar() {
             aria-label="Toggle dark mode"
           >
             {isDarkMode ? (
-              <Sun className="text-[var(--color-dark-text)]" size={20} />
+              <Sun className="text-[var(--color-primary)]" size={20} />
             ) : (
-              <Moon className="text-indigo-600" size={20} />
+              <Moon className="text-[var(--color-primary)]" size={20} />
             )}
           </button>
           
@@ -100,13 +98,13 @@ export default function Navbar() {
 
         
         {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-[var(--color-dark-bg)]  shadow-lg py-4 px-6 md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-[var(--color-bg)]  shadow-lg py-4 px-6 md:hidden opacity-80">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-[var(--color-dark-text)] hover:text-[var(--color-primary)] py-2 transition-colors"
+                  className="text-[var(--color-primary)] hover:underline py-2 font-bold"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

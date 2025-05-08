@@ -4,7 +4,7 @@ export default function ProjectCard({ project }) {
     const [isHovered, setIsHovered] = useState(false);
     
     // Check if the project has any links to display
-    const hasLinks = project.githubLink || project.liveLink;
+    const hasLinks = project.github || project.liveLink;
 
     return (
         <div
@@ -27,12 +27,12 @@ export default function ProjectCard({ project }) {
                             isHovered ? 'opacity-80' : 'opacity-0'
                         }`}
                     >
-                        {project.githubLink && (
+                        {project.github && (
                             <a
-                                href={project.githubLink}
+                                href={project.github}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+                                className="btn-primary btn-hover"
                             >
                                 GitHub
                             </a>
