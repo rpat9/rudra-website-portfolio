@@ -40,7 +40,7 @@ export default function RudraResume() {
                 </button>
 
                 <a 
-                    href="/RudraResume-25.pdf"
+                    href="/RudraResume.pdf"
                     download 
                     className="btn-primary btn-hover inline-flex items-center cursor-pointer"
                 >
@@ -56,7 +56,7 @@ export default function RudraResume() {
             <div className="max-w-5xl mx-auto fade-in-on-scroll">
                 {viewMode === "pdf" ? (
                     <div className="flex justify-center">
-                        <embed src="./RudraResume25.pdf" width="100%" height="800" type="application/pdf" className="rounded-lg shadow-lg" />
+                        <embed src="./RudraResume.pdf" width="100%" height="800" type="application/pdf" className="rounded-lg shadow-lg" />
                     </div>
                 ) : (
                         <div className="card">
