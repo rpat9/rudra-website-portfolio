@@ -101,7 +101,7 @@ export default function RudraResume() {
                         <div className="space-y-8">
 
                             {resumeData.experience.map(exp => (
-                            <div key={exp.id} className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                            <div key={exp.id} className="grid grid-cols-1 md:grid-cols-4 gap-3">
 
                                 <div className="md:col-span-1 text-[var(--color-text-secondary)]">
                                 {exp.period}
@@ -111,10 +111,10 @@ export default function RudraResume() {
                                     <h4 className="text-lg font-bold text-[var(--color-text)]">{exp.role}</h4>
                                     <p className="text-[var(--color-primary)] font-bold">{exp.company}</p>
                                     <p className="text-[var(--color-text-secondary)] italic">{exp.location}</p>
-                                    <p className="mt-2 text-[var(--color-text)]">{exp.description}</p>
+                                    <p className="mt-2 mb-5 text-[var(--color-text)]">{exp.description}</p>
                                 
                                     {exp.achievements && (
-                                        <ul className="mt-2 list-disc list-inside space-y-1">
+                                        <ul className="mt-2 list-disc space-y-1">
                                         {exp.achievements.map((achievement, i) => (
                                             <li key={i} className="text-[var(--color-text)]">{achievement}</li>
                                         ))}

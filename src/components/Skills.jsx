@@ -7,11 +7,11 @@ export default function Skills() {
       },
       {
         category: "Backend",
-        skills: ["Node.js", "Express", "Python", "SQL", "RESTful APIs"]
+        skills: ["Node.js", "Express", "Python", "SQL", "RESTful APIs", "Firebase"]
       },
       {
         category: "Tools & Others",
-        skills: ["Git", "GitHub", "VS Code", "Agile", "Microsoft Azure", "Responsive Design"]
+        skills: ["Git", "GitHub", "VS Code", "Agile", "Microsoft Azure", "Responsive Design", "AWS", "Docker"]
       }
     ];
   
