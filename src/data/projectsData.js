@@ -5,7 +5,7 @@ const projectsData = [
         id: 1,
         title: "Hometown-Liquors (IN-PROGRESS)",
         description: "Hometown Liquors is a modern, full-featured e-commerce platform for a local liquor store. It’s built to help my dad's business transition smoothly into the digital space, enabling online browsing, in-store pickup orders, customer engagement, and future analytics all while maintaining compliance with age restrictions.",
-        image:"/assignment-portfolio-preview.png",
+        image:"/hometown-liquors-preview.png",
         technologies: ["React", "Tailwind CSS", "Firebase", "Chart.js", "Stripe", "AWS"],
         github: "https://github.com/rpat9/HometownLiquors-Website",
         liveLink: ""
@@ -35,7 +35,7 @@ const projectsData = [
     {
         id: 4,
         title: "Health-Insurance Risk Calculator",
-        description: "Full-stack health risk calculator for insurance agents, enabling accurate evaluation of applicants based on age, BMI, blood pressure, and family history",
+        description: "Full-stack health risk calculator for insurance agents allowing accurate evaluation of applicants based on age, BMI, blood pressure, and family history",
         image:"/health-risk-calc-preview.png",
         technologies: ["JavaScript", "HTML", "CSS", "Node.js", "Express", "RestAPI", "MS Azure"],
         github: "https://github.com/orgs/LU-TitanicSwimTeam/repositories",
