@@ -72,6 +72,10 @@ body {
     color: var(--color-text);
   }
 
+  .card-bottom {
+    margin-top: auto;
+  }
+
   .text-secondary {
     @apply text-[var(--color-text-secondary)];
   }

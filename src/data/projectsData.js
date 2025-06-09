@@ -14,7 +14,7 @@ const projectsData = [
     {
         id: 2,
         title: "MasterChef Claude",
-        description: "Full-Stack React and Tailwind-based web application that generates personalized recipes based on your available ingredients using Claude AI.",
+        description: "MasterChef Claude helps home cooks turn whatever ingredients they have into complete recipes using AI. Built to solve the daily 'what should I cook?' problem, it generates personalized recipes from your pantry items, lets you save favorites with personal notes, and builds your own digital cookbook over time.",
         image:"/masterchef-claude-preview.png",
         technologies: ["React", "Tailwind CSS", "Firebase", "AWS", "Docker", "ClaudeAPI"],
         github: "https://github.com/rpat9/MasterChef-Claude",
@@ -24,7 +24,7 @@ const projectsData = [
     {
         id: 3,
         title: "QuizMaster",
-        description: "Contributed to a scalable Web application that allows users to create and take Quizzes and receive feedback on how well they did.",
+        description: "QuizMaster is a web platform I'm taking over with my capstone team to refine quiz creation and quiz taking. Built to serve educators and learners who need reliable quiz tools, it features customizable difficulty levels, custom quiz creation, and improved search functionality to help users create, find, and complete quizzes for their specific learning goals.",
         image: "/quizmaster-preview.png",
         technologies: ["React", "Node.js", "TailwindCSS", "Firebase", "Vite", "Google Cloud"],
         github: "https://github.com/QuizMasterInc/QuizMaster",
@@ -35,7 +35,7 @@ const projectsData = [
     {
         id: 4,
         title: "Health-Insurance Risk Calculator",
-        description: "Full-stack health risk calculator for insurance agents allowing accurate evaluation of applicants based on age, BMI, blood pressure, and family history",
+        description: "Full-stack health insurance risk assessment tool built to help insurance companies evaluate new customer applications efficiently. It calculates risk scores based on personal health data like age, BMI, blood pressure, and family history, then categorizes applicants into risk levels to ease the underwriting process and improve decision-making accuracy.",
         image:"/health-risk-calc-preview.png",
         technologies: ["JavaScript", "HTML", "CSS", "Node.js", "Express", "RestAPI", "MS Azure"],
         github: "https://github.com/orgs/LU-TitanicSwimTeam/repositories",

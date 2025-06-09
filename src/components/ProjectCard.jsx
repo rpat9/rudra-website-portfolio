@@ -20,22 +20,22 @@ export default function ProjectCard({ project }) {
 
     return (
         <div
-            className="group relative card rounded-2xl overflow-hidden transition-all duration-500  hover:border-[var(--color-primary)] hover:transform hover:scale-[1.02]"
+            className="fade-in group relative h-[650px] card p-4 rounded-2xl transition-all duration-500 hosver:border-[var(--color-primary)] hover:transform hover:scale-[1.02] flex flex-col md:h-[550px]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
             
-            <div className="absolute top-4 left-4 z-20 flex items-center gap-2 px-3 py-1 bg-black/70 backdrop-blur-sm rounded-full text-white text-sm font-medium">
+            <div className="absolute top-4 left-4 z-20 flex items-center gap-2 px-2 py-1 bg-black/70 backdrop-blur-sm rounded-full text-white text-sm font-medium">
                 <span>{status.icon}</span>
                 <span>{status.label}</span>
             </div>
 
             
-            <div className="relative h-56 overflow-hidden">
+            <div className="relative h-56">
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+                    className="w-full h-full object-fit transition-all duration-500 group-hover:scale-102"
                 />
                 
                 
@@ -75,7 +75,7 @@ export default function ProjectCard({ project }) {
             </div>
 
             
-            <div className="p-6 space-y-4">
+            <div className="py-3 space-y-4 flex-1 flex flex-col">
                 
                 <div className="space-y-2">
                     <h3 className="text-xl font-bold text-[var(--color-primary)] group-hover:text-[var(--color-primary)]/80 transition-colors duration-300">
@@ -83,7 +83,7 @@ export default function ProjectCard({ project }) {
                     </h3>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-0.5">
                     {project.technologies.map((tech, index) => (
                         <span
                             key={tech}
@@ -100,12 +100,12 @@ export default function ProjectCard({ project }) {
                     ))}
                 </div>
 
-                <p className="text-[var(--color-text)] text-sm leading-relaxed line-clamp-3 group-hover:text-[var(--color-text)] transition-colors duration-300">
+                <p className="text-[var(--color-text)] text-sm leading-relaxed group-hover:text-[var(--color-text)] transition-colors duration-300 flex-1">
                     {project.description}
                 </p>
 
                 
-                <div className="flex items-center justify-between pt-4">
+                <div className="flex items-center justify-between pt-4 mt-auto">
                     <div className="flex items-center gap-4 text-xs text-[var(--color-text)]">
                         <div className="flex items-center gap-1">
                             <Calendar size={14} />
