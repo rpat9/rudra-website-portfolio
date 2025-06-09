@@ -3,18 +3,18 @@
 const projectsData = [
     {
         id: 1,
-        title: "QuizMaster",
-        description: "Contributed to a scalable Web application that allows users to create and take Quizzes and receive feedback on how well they did.",
-        image: "/quizmaster-preview.png",
-        technologies: ["React", "Node.js", "TailwindCSS", "Firebase", "Vite", "Google Cloud"],
-        github: "https://github.com/QuizMasterInc/QuizMaster",
-        liveLink: "https://quizmaster-c66a2.web.app/"
+        title: "Hometown-Liquors (IN-PROGRESS)",
+        description: "Hometown Liquors is a modern, full-featured e-commerce platform for a local liquor store. It’s built to help my dad's business transition smoothly into the digital space, enabling online browsing, in-store pickup orders, customer engagement, and future analytics all while maintaining compliance with age restrictions.",
+        image:"/assignment-portfolio-preview.png",
+        technologies: ["React", "Tailwind CSS", "Firebase", "Chart.js", "Stripe", "AWS"],
+        github: "https://github.com/rpat9/HometownLiquors-Website",
+        liveLink: ""
     },
 
     {
         id: 2,
         title: "MasterChef Claude",
-        description: "React and Tailwind-based app that utilizes Claude API to send a list of ingredients and receive a recipe which is recommended to the user.",
+        description: "Full-Stack React and Tailwind-based web application that generates personalized recipes based on your available ingredients using Claude AI.",
         image:"/masterchef-claude-preview.png",
         technologies: ["React", "Tailwind CSS", "Firebase", "AWS", "Docker", "ClaudeAPI"],
         github: "https://github.com/rpat9/MasterChef-Claude",
@@ -23,6 +23,17 @@ const projectsData = [
 
     {
         id: 3,
+        title: "QuizMaster",
+        description: "Contributed to a scalable Web application that allows users to create and take Quizzes and receive feedback on how well they did.",
+        image: "/quizmaster-preview.png",
+        technologies: ["React", "Node.js", "TailwindCSS", "Firebase", "Vite", "Google Cloud"],
+        github: "https://github.com/QuizMasterInc/QuizMaster",
+        liveLink: "https://quizmaster-c66a2.web.app/"
+    },
+    
+
+    {
+        id: 4,
         title: "Health-Insurance Risk Calculator",
         description: "Full-stack health risk calculator for insurance agents, enabling accurate evaluation of applicants based on age, BMI, blood pressure, and family history",
         image:"/health-risk-calc-preview.png",
@@ -31,15 +42,6 @@ const projectsData = [
         liveLink: "https://thankful-sand-02d2aac10.6.azurestaticapps.net/"
     },
 
-    {
-        id: 4,
-        title: "Assignment Portfolio",
-        description: "This web application consists of all assignements or projects that I have worked on for CSPC 440 at Lewis University.",
-        image:"/assignment-portfolio-preview.png",
-        technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MS Azure"],
-        github: "https://github.com/rpat9/rudra-portfolio-on-azure-with-nodejs",
-        liveLink: "https://rudra-portfolio-on-azure-with-nodejs-atepbua2gtd7ajdm.centralus-01.azurewebsites.net/"
-    },
 
 ];
 

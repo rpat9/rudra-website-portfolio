@@ -33,7 +33,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-lg md:text-xl mb-6 text-[var(--color-text)]">
-                    Aspiring software engineer with hands-on experience building web applications in JavaScript, React, Node.js, and Python. Skilled in Agile development, cloud deployment, and creating scalable, user-focused solutions. Strong collaborator and problem-solver, recognized for improving performance and usability.
+                    Computer Science student at Lewis University building full-stack web applications with React, Node.js, and Python. Experience with cloud deployment on AWS and Azure, database design, and collaborative development using Git and Agile methodologies.
                 </p>
 
                 <a href="#projects" className="btn-primary mr-5 btn-hover">
