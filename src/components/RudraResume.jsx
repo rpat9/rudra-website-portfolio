@@ -156,8 +156,8 @@ export default function RudraResume() {
                                         <Briefcase className="text-white" size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="text-2xl font-bold text-[var(--color-primary)]">Work Experience</h3>
-                                        <p className="text-[var(--color-text)]/60 text-sm">Professional Journey</p>
+                                        <h3 className="text-2xl font-bold text-[var(--color-primary)]">Technical Projects</h3>
+                                        <p className="text-[var(--color-text)]/60 text-sm">Development Experience</p>
                                     </div>
                                 </div>
 

@@ -26,7 +26,7 @@ const projectsData = [
         title: "QuizMaster",
         description: "QuizMaster is a web platform I'm taking over with my capstone team to refine quiz creation and quiz taking. Built to serve educators and learners who need reliable quiz tools, it features customizable difficulty levels, custom quiz creation, and improved search functionality to help users create, find, and complete quizzes for their specific learning goals.",
         image: "/quizmaster-preview.png",
-        technologies: ["React", "Node.js", "TailwindCSS", "Firebase", "Vite", "Google Cloud"],
+        technologies: ["React", "Node.js", "Tailwind CSS", "Firebase", "Google Cloud"],
         github: "https://github.com/QuizMasterInc/QuizMaster",
         liveLink: "https://quizmaster-c66a2.web.app/"
     },
