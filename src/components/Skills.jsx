@@ -14,13 +14,13 @@ export default function Skills() {
         {
             category: "Backend", 
             icon: Server,
-            skills: ["Node.js", "Express", "Python", "SQL", "RESTful APIs", "Firebase"],
+            skills: ["Node.js", "Express", "Python", "Java", "SQL", "RESTful APIs", "Firebase"],
             description: "Creating robust server-side applications and APIs"
         },
         {
             category: "Tools & Others",
             icon: Wrench,
-            skills: ["Git", "GitHub", "VS Code", "Agile", "Microsoft Azure", "Responsive Design", "AWS", "Docker"],
+            skills: ["Git", "GitHub", "VS Code", "Agile", "Microsoft Azure", "DevOps", "AWS", "Docker"],
             description: "Development tools and deployment technologies"
         }
     ];

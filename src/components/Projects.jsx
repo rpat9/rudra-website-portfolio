@@ -1,40 +1,83 @@
 import { useState, useEffect } from "react";
-import { Code, Layers, Zap, Filter } from "lucide-react";
+import { Code, ChevronLeft, ChevronRight, Layers, Zap, Globe, Wrench } from "lucide-react";
 import ProjectCard from "./ProjectCard.jsx";
 import projectsData from "../data/projectsData";
 
 export default function Projects() {
     const [filter, setFilter] = useState('all');
     const [filteredProjects, setFilteredProjects] = useState(projectsData);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
 
     const allTechnologies = [...new Set(projectsData.flatMap(project => project.technologies))];
     
     const filterCategories = [
         { id: 'all', label: 'All Projects', icon: Layers },
-        { id: 'React', label: 'React', icon: Code },
-        { id: 'Node.js', label: 'Backend', icon: Zap },
-        { id: 'Firebase', label: 'Database', icon: Filter }
+        { id: 'full-stack', label: 'Full-Stack', icon: Code },
+        { id: 'live', label: 'Live Apps', icon: Globe },
+        { id: 'in-development', label: 'In Development', icon: Wrench }
     ];
+
+    const [projectsPerView, setProjectsPerView] = useState(2);
+
+    useEffect(() => {
+        const updateProjectsPerView = () => {
+            setProjectsPerView(window.innerWidth < 1024 ? 1 : 2);
+        };
+
+        updateProjectsPerView();
+        window.addEventListener('resize', updateProjectsPerView);
+        return () => window.removeEventListener('resize', updateProjectsPerView);
+    }, []);
 
     useEffect(() => {
         setIsVisible(true);
+        setCurrentIndex(0);
+        
         if (filter === 'all') {
             setFilteredProjects(projectsData);
-        } else {
+        } else if (filter === 'full-stack') {
+            
+            setFilteredProjects(projectsData);
+
+        } else if (filter === 'live') {
+            
+            setFilteredProjects(
+                projectsData.filter(project => project.liveLink)
+            );
+
+        } else if (filter === 'in-development') {
+
             setFilteredProjects(
                 projectsData.filter(project => 
-                    project.technologies.includes(filter)
+                    project.title.includes("IN-PROGRESS")
                 )
             );
+
         }
     }, [filter]);
+
+    const maxIndex = Math.max(0, filteredProjects.length - projectsPerView);
+
+    const goToNext = () => {
+        setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
+    };
+
+    const goToPrev = () => {
+        setCurrentIndex(prev => (prev <= 0 ? maxIndex : prev - 1));
+    };
+
+    const goToSlide = (index) => {
+        setCurrentIndex(index);
+    };
 
     const stats = {
         total: projectsData.length,
         technologies: allTechnologies.length,
         live: projectsData.filter(p => p.liveLink).length
     };
+
+    const visibleProjects = filteredProjects.slice(currentIndex, currentIndex + projectsPerView);
 
     return (
         <section id="projects" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16 relative overflow-hidden">
@@ -47,6 +90,7 @@ export default function Projects() {
             <div className="container mx-auto max-w-7xl relative z-10">
                 
                 <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-[var(--color-primary)] border-[var(--color-primary)] rounded-full text-[var(--button-text-color)] text-sm font-medium mb-6">
                         <Code size={16} />
                         <span>Featured Work</span>
@@ -109,19 +153,91 @@ export default function Projects() {
                 </div>
 
                 <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
-                        {filteredProjects.map((project, index) => (
-                            <div
-                                key={project.id}
-                                className="transition-all duration-500"
-                                style={{
-                                    animationDelay: `${index * 100}ms`
-                                }}
-                            >
-                                <ProjectCard project={project} />
+                    
+                    {filteredProjects.length > 0 ? (
+
+                        <div className="relative max-w-6xl mx-auto">
+                            
+                            {filteredProjects.length > projectsPerView && (
+                                <>
+                                    <button
+                                        onClick={goToPrev}
+                                        className="absolute left-0 lg:-left-16 top-1/2 -translate-y-1/2 z-20 p-3 bg-[var(--color-primary)] text-[var(--button-text-color)] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"
+                                        aria-label="Previous projects"
+                                    >
+                                        <ChevronLeft size={24} className="group-hover:-translate-x-0.5 transition-transform duration-200 cursor-pointer" />
+                                    </button>
+                                    
+                                    <button
+                                        onClick={goToNext}
+                                        className="absolute right-0 lg:-right-16 top-1/2 -translate-y-1/2 z-20 p-3 bg-[var(--color-primary)] text-[var(--button-text-color)] rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"
+                                        aria-label="Next projects"
+                                    >
+                                        <ChevronRight size={24} className="group-hover:translate-x-0.5 transition-transform duration-200 cursor-pointer" />
+                                    </button>
+                                </>
+                            )}
+
+                            <div className={`grid gap-6 sm:gap-8 transition-all duration-500 ${
+                                projectsPerView === 1 ? 'grid-cols-1' : 'grid-cols-1 lg:grid-cols-2'
+                            }`}>
+
+                                {visibleProjects.map((project, index) => (
+                                    <div
+                                        key={project.id}
+                                        className="transition-all duration-500 transform"
+                                        style={{
+                                            animationDelay: `${index * 100}ms`
+                                        }}
+                                    >
+                                        <ProjectCard project={project} />
+                                    </div>
+                                ))}
+
                             </div>
-                        ))}
-                    </div>
+
+                            {filteredProjects.length > projectsPerView && (
+                                <div className="flex justify-center gap-2 mt-8">
+
+                                    {Array.from({ length: maxIndex + 1 }, (_, index) => (
+                                        <button
+                                            key={index}
+                                            onClick={() => goToSlide(index)}
+                                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                                currentIndex === index
+                                                    ? 'bg-[var(--color-primary)] scale-110'
+                                                    : 'bg-[var(--color-text)]/30 hover:bg-[var(--color-primary)]/50'
+                                            }`}
+                                            aria-label={`Go to slide ${index + 1}`}
+                                        />
+                                    ))}
+
+                                </div>
+                            )}
+
+                            
+                            <div className="text-center mt-6">
+                                <span className="text-sm text-[var(--color-text)]/70">
+                                    Showing {currentIndex + 1}-{Math.min(currentIndex + projectsPerView, filteredProjects.length)} of {filteredProjects.length} projects
+                                </span>
+                            </div>
+
+                        </div>
+                    ) : (
+                        
+                        <div className="text-center py-12">
+                            <div className="text-6xl mb-4">🔍</div>
+
+                            <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-2">
+                                No projects found
+                            </h3>
+
+                            <p className="text-[var(--color-text)]">
+                                Try selecting a different filter or view all projects.
+                            </p>
+
+                        </div>
+                    )}
                 </div>
 
                 <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -148,8 +264,11 @@ export default function Projects() {
                             >
                                 View All on GitHub
                             </a>
+
                         </div>
+
                     </div>
+                    
                 </div>
             </div>
         </section>

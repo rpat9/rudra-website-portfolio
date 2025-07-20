@@ -50,16 +50,18 @@ export default function Hero() {
                         </div>
 
                         <p className="text-base sm:text-lg md:text-xl text-[var(--color-text)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            Computer Science student at Lewis University building full-stack web applications  
-                            <span className="text-[var(--color-primary)] font-semibold"> in React, Node.js, and Python. </span> 
-                            Experienced in cloud deployment with
-                            <span className="text-[var(--color-primary)] font-semibold"> AWS and Azure, database design,</span> and collaborative development using
-                            <span className="text-[var(--color-primary)] font-semibold"> Git and Agile methodologies.</span>
+                            I build full-stack applications with
+                            <span className="text-[var(--color-primary)] font-semibold"> Python, React, and Node.js. </span> 
+                            Experienced in cloud deployment
+                            <span className="text-[var(--color-primary)] font-semibold"> (AWS, Azure, GCP), database design,</span> and collaborative development using
+                            <span className="text-[var(--color-primary)] font-semibold"> Git and Agile. </span>
+                            I deliver reliable, maintainable systems that support 
+                            <span className="text-[var(--color-primary)] font-semibold"> business growth and operational efficiency</span>.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <a 
-                                href="#projects" 
+                                href="#featured-work" 
                                 className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-[var(--color-primary)] to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
                             >
                                 <span className="relative z-10 flex items-center justify-center">

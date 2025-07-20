@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FileText, Download, BookOpen, GraduationCap, Briefcase, Code, User } from "lucide-react";
+import { FileText, Download, BookOpen, GraduationCap, Briefcase, Code, User, FolderKanban } from "lucide-react";
 import resumeData from "../data/resumeData.js";
 
 export default function RudraResume() {
@@ -156,7 +156,7 @@ export default function RudraResume() {
                                         <Briefcase className="text-white" size={20} />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-primary)]">Technical Projects</h3>
+                                        <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-primary)]">Work Experience</h3>
                                         <p className="text-[var(--color-text)]/60 text-sm">Development Experience</p>
                                     </div>
                                 </div>
@@ -215,6 +215,77 @@ export default function RudraResume() {
                                         </div>
                                     ))}
                                 </div>
+
+                                
+                            </div>
+
+                            <div className="card border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/20 transition-all duration-300">
+                                <div className="flex items-center gap-3 mb-6 sm:mb-8">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-orange-600 to-red-600 rounded-lg flex items-center justify-center">
+                                        <FolderKanban className="text-white" size={20} />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-primary)]">Technical Projects</h3>
+                                        <p className="text-[var(--color-text)]/60 text-sm">Project Experience</p>
+                                    </div>
+                                </div>
+
+                                <div className="space-y-6 sm:space-y-8">
+                                    {resumeData.projects.map((project, index) => (
+                                        <div key={project.id} className="group relative">
+                                            
+                                            {index < resumeData.projects.length - 1 && (
+                                                <div className="absolute left-4 sm:left-6 top-16 sm:top-20 w-0.5 h-full bg-gradient-to-b from-[var(--color-primary)]/30 to-transparent hidden sm:block"></div>
+                                            )}
+                                            
+                                            <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 rounded-lg bg-[var(--color-primary)]/5 group-hover:bg-[var(--color-primary)]/10 transition-all duration-300">
+                                                
+                                                <div className="lg:col-span-1">
+                                                    <div className="flex items-center gap-3 mb-3">
+                                                        <div className="w-3 h-3 bg-[var(--color-primary)] rounded-full"></div>
+                                                        <div className="inline-flex items-center px-3 py-1 bg-[var(--color-primary)]/10 rounded-full text-xs sm:text-sm font-medium text-[var(--color-primary)]">
+                                                            {project.period}
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div className="lg:col-span-3">
+                                                    <h4 className="text-lg sm:text-xl font-bold text-[var(--color-text)] mb-2">
+                                                        {project.role}
+                                                    </h4>
+                                                    <p className="text-[var(--color-primary)] font-bold text-base sm:text-lg mb-1">
+                                                        {project.company}
+                                                    </p>
+                                                    <p className="text-[var(--color-text)]/60 text-sm mb-4">
+                                                        {project.location}
+                                                    </p>
+                                                    <p className="text-[var(--color-text)] leading-relaxed mb-4 text-sm sm:text-base">
+                                                        {project.description}
+                                                    </p>
+                                                    
+                                                    {project.achievements && (
+                                                        <div className="space-y-2">
+                                                            <h5 className="font-semibold text-[var(--color-text)] text-xs sm:text-sm uppercase tracking-wide">
+                                                                Key Achievements
+                                                            </h5>
+                                                            <ul className="space-y-2">
+                                                                {project.achievements.map((achievement, i) => (
+                                                                    <li key={i} className="flex items-start gap-2 sm:gap-3 text-[var(--color-text)]">
+                                                                        <div className="w-1.5 h-1.5 bg-[var(--color-primary)] rounded-full mt-2 flex-shrink-0"></div>
+                                                                        <span className="leading-relaxed text-sm sm:text-base">{achievement}</span>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                
                             </div>
                             
                             <div className="card border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/20 transition-all duration-300">
