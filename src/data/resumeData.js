@@ -17,11 +17,11 @@ const resumeData = {
       role: "Freelance Software Engineer",
       period: "May 1, 2025 - July 31, 2025",
       location: "Braceville, IL",
-      description: "Developed a production-ready e-commerce platform for a local liquor store, enabling real-time product browsing, order placement, and personalized user experiences across mobile and desktop.",
+      description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
-        "Developed a production-ready e-commerce platform for a local liquor store using React, Firebase, and Tailwind, enabling real-time product browsing, order placement, and personalized user experiences across mobile and desktop.",
-        "Engineered backend with Firestore handling 750+ products and secure user authentication, order tracking, and inventory management; integrated Algolia for sub-200ms search responses with typo-tolerance, pagination, and category filters.",
-        "Designed and implemented a role-based admin dashboard with comprehensive order management, sales reporting, and inventory control tools; built 15+ reusable React components reducing development time by 40%.",
+        "Shipped a mobile-first e-commerce platform for a local liquor store from scratch using React, Firebase, and Tailwind CSS; platform enables real-time browsing, secure ordering, and live inventory updates.",
+        "Engineered backend with Firestore handling 750+ products and secure user authentication, order tracking, and inventory management; integrated Algolia for sub-200ms search responses with typo-tolerance, pagination, category filters, and multi-select facets.",
+        "Designed and built a feature-rich admin dashboard with comprehensive order management, sales reporting, and inventory controls; built 15+ reusable React components reducing development time by 40%.",
         "Automated product image curation with Python scripts and manual review flow; integrated stock alerting, and review systems for real-time UI updates and notification events."
       ]
     },
@@ -36,10 +36,10 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "Real Estate analytics platform to help investors evaluate property ROI, neighborhood trends, and location fit for various investments.",
       achievements: [
-        "Designing full-stack real estate analytics platform to help investors evaluate property ROI, neighborhood trends, and location fit using ML, clustering, and predictive modeling",
-        "Implementing FastAPI backend with Python-based ML models (regression, KNN, clustering) and PostgreSQL database for property and ZIP-level data",
-        "Developing interactive UI with React and Tailwind to provide visual insights, investment scores, and lifestyle-matched recommendations for users",
-        "Deploying via GCP with CI/CD workflows, and RESTful API access for broader integration and external data ingestion"
+        "Engineering a multi-service platform with React frontend, Java Spring Boot, REST API, and Python ML services for real estate investment analysis and property evaluation.",
+        "Building secure authentication system using Spring Security with JWT tokens and role-base access control for user management and data protection.",
+        "Designing database schema in PostgreSQL for property data, market analytics, and user profiles with optimized queries for financial metrics calculation.",
+        "Developing ML pipeline with Python/FastAPI for investment scoring, price prediction, and risk assessment using scikit-learn and market trend analysis"
       ]
     },
 
