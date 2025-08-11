@@ -19,10 +19,11 @@ const resumeData = {
       location: "Braceville, IL",
       description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
-        "Shipped a mobile-first e-commerce platform for a local liquor store from scratch using React, Firebase, and Tailwind CSS; platform enables real-time browsing, secure ordering, and live inventory updates.",
-        "Engineered backend with Firestore handling 750+ products and secure user authentication, order tracking, and inventory management; integrated Algolia for sub-200ms search responses with typo-tolerance, pagination, category filters, and multi-select facets.",
-        "Designed and built a feature-rich admin dashboard with comprehensive order management, sales reporting, and inventory controls; built 15+ reusable React components reducing development time by 40%.",
-        "Automated product image curation with Python scripts and manual review flow; integrated stock alerting, and review systems for real-time UI updates and notification events."
+        "Architected and deployed production e-commerce platform using React, Tailwind, and Firebase supporting 750+ products with QR code integration, mobile-first responsive design, and real-time inventory validation for local business",
+        "Engineered intelligent pagination system limiting Firebase reads to 25 products per page, reducing database costs by 70% while maintaining sub-200ms search performance through strategic Algolia integration",
+        "Implemented cost-optimized data loading strategy with search-first UX design enabling users to find products instantly rather than browsing sequentially, reducing customer product discovery time by 80%",
+        "Developed comprehensive admin dashboard with role-based access control using Firestore security rules; architected order management system, inventory tracking, and automated stock alerts with real-time notifications",
+        "Designed responsive multi-device experience supporting mobile, tablet, and desktop platforms with adaptive layouts, dark/light theme implementation using CSS variables, and touch-optimized interfaces"
       ]
     },
   ],
@@ -36,10 +37,10 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "Real Estate analytics platform to help investors evaluate property ROI, neighborhood trends, and location fit for various investments.",
       achievements: [
-        "Engineering a multi-service platform with React frontend, Java Spring Boot, REST API, and Python ML services for real estate investment analysis and property evaluation.",
-        "Building secure authentication system using Spring Security with JWT tokens and role-base access control for user management and data protection.",
-        "Designing database schema in PostgreSQL for property data, market analytics, and user profiles with optimized queries for financial metrics calculation.",
-        "Developing ML pipeline with Python/FastAPI for investment scoring, price prediction, and risk assessment using scikit-learn and market trend analysis"
+        "Developed full-stack real estate platform with React frontend, Spring Boot REST API, and PostgreSQL backend; designed database schema supporting complex property relationships and financial metrics calculations",
+        "Built enterprise-grade authentication system using Spring Security with JWT tokens and role-based access control; implemented 8+ RESTful endpoints for property CRUD operations, user management, and market data retrieval",
+        "Engineered multi-service architecture supporting microservices deployment with health monitoring endpoints and ML pipeline integration for investment scoring, price prediction, and automated market trend analysis",
+        "Designed responsive full-stack architecture with mobile-first principles ensuring consistent user experience across all screen sizes using modern CSS Grid, Flexbox, and component-based design patterns"
       ]
     },
 
@@ -51,24 +52,20 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "AI-Powered Recipe Generator using Claude API, serving 200+ unique recipes to users.",
       achievements: [
-        "Built AI-Powered Recipe Generator using Claude API, serving 200+ unique recipes to users with personalized recipe recommendations.",
-        "Implemented secure authentication system using Firebase Authentication for secure user registration, login, and managing personalized recipe collections.",
-        "Deployed production-ready application using AWS with automated CI/CD pipeline, reducing deployment time by 80%."
+        "Built AI-powered recipe platform integrating Claude API with React/Node.js architecture; implemented intelligent ingredient validation, recipe saving, and personalized user collections with Firebase Auth and Firestore",
+        "Engineered responsive full-stack application with dark/light theme system, markdown rendering capabilities, and real-time progress tracking delivering seamless user experience across all device types",
+        "Dockerized multi-container application and deployed on AWS with automated CI/CD pipeline, reducing deployment time by 80%"
       ]
     }
   ],
     
   skills: {
-    technical: [
-      "Python", "JavaScript", "Java", "HTML/CSS", "SQL", 
-      "React", "Node.js", "Express.js", "Tailwind CSS", "Firebase/Firestore", 
-      "MongoDB", "PostgreSQL", "Git/GitHub", "Docker", "AWS", "Google Cloud Platform", "Microsoft Azure",
-      "REST APIs"
-    ],
-    soft: [
-      "Problem Solving", "Team Collaboration", "Communication", 
-      "Agile Development", "Time Management", "Leadership", "Project Management"
-    ]
+    languages: ["Python", "Java", "JavaScript", "HTML/CSS", "SQL"],
+    frameworks: ["React", "Node.js", "Express.js", "Tailwind", "Spring Boot", "FastAPI"],
+    databases: ["MySQL", "Firestore", "MongoDB", "PostgreSQL", "Supabase"],
+    cloud: ["AWS", "GCP", "Azure", "Docker", "GitHub Actions", "CI/CD"],
+    tools: ["Git", "Maven", "JWT Authentication", "REST APIs", "Microservices", "Agile", "Containerization", "Event-Driven Architecture"],
+    soft: ["Problem Solving", "Team Collaboration", "Communication", "Agile Development", "Time Management", "Leadership", "Project Management"]
   }
 
 };

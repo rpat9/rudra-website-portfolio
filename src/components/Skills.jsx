@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code, Server, Wrench } from "lucide-react";
+import { Code, Server, Cloud } from "lucide-react";
 
 export default function Skills() {
     const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -8,20 +8,20 @@ export default function Skills() {
         {
             category: "Frontend",
             icon: Code,
-            skills: ["React", "JavaScript", "HTML", "CSS", "Tailwind CSS"],
-            description: "Building responsive and interactive user interfaces"
+            skills: ["React", "JavaScript", "TypeScript", "Tailwind", "HTML", "CSS", "Responsive Design"],
+            description: "Building responsive and interactive user interfaces with modern frameworks"
         },
         {
-            category: "Backend", 
+            category: "Backend & APIs", 
             icon: Server,
-            skills: ["Node.js", "Express", "Python", "Java", "SQL", "RESTful APIs", "Firebase"],
-            description: "Creating robust server-side applications and APIs"
+            skills: ["Node.js", "Express.js", "Python", "Java", "Spring Boot", "FastAPI", "REST APIs", "JWT Authentication", "Microservices"],
+            description: "Creating robust server-side applications, APIs, and scalable architectures"
         },
         {
-            category: "Tools & Others",
-            icon: Wrench,
-            skills: ["Git", "GitHub", "VS Code", "Agile", "Microsoft Azure", "DevOps", "AWS", "Docker"],
-            description: "Development tools and deployment technologies"
+            category: "Data & Cloud",
+            icon: Cloud,
+            skills: ["SQL", "MySQL", "PostgreSQL", "MongoDB", "Firestore", "Supabase", "AWS", "GCP", "Azure", "Docker", "CI/CD", "GitHub Actions"],
+            description: "Database management, cloud deployment, and DevOps technologies"
         }
     ];
 
@@ -40,7 +40,7 @@ export default function Skills() {
                         return (
                             <div 
                                 key={group.category}
-                                className="fade-in group relative card p-6 rounded-2xl transition-all duration-500 hover:border-[var(--color-primary)] hover:transform hover:scale-[1.02] flex flex-col min-h-[280px] md:min-h-[320px]"
+                                className="fade-in group relative card p-6 rounded-2xl transition-all duration-500 hover:border-[var(--color-primary)] hover:transform hover:scale-[1.02] flex flex-col min-h-[320px] md:min-h-[360px]"
                                 onMouseEnter={() => setHoveredCategory(group.category)}
                                 onMouseLeave={() => setHoveredCategory(null)}
                             >
@@ -60,26 +60,31 @@ export default function Skills() {
                                 </p>
                                 
                                 
-                                <div className="flex flex-wrap gap-1 mb-3">
+                                <div className="flex flex-wrap gap-2 mb-4">
                                     {group.skills.map((skill, skillIndex) => (
                                         <span
                                             key={skill}
-                                            className={`px-3 py-1 text-center text-sm font-medium rounded-2xl border transition-all duration-300 ${
-                                                skillIndex % 3 === 0 
-                                                    ? 'bg-blue-500/10 text-[var(--color-text)] border-blue-500/20' 
-                                                    : skillIndex % 3 === 1 
-                                                    ? 'bg-purple-500/10 text-[var(--color-text)] border-purple-500/20'
-                                                    : 'bg-green-500/10 text-[var(--color-text)] border-green-500/20'
+                                            className={`px-3 py-1.5 text-center text-sm font-medium rounded-lg border transition-all duration-300 ${
+                                                skillIndex % 4 === 0 
+                                                    ? 'bg-blue-500/10 text-[var(--color-text)] border-blue-500/20 hover:bg-blue-500/20' 
+                                                    : skillIndex % 4 === 1 
+                                                    ? 'bg-purple-500/10 text-[var(--color-text)] border-purple-500/20 hover:bg-purple-500/20'
+                                                    : skillIndex % 4 === 2
+                                                    ? 'bg-green-500/10 text-[var(--color-text)] border-green-500/20 hover:bg-green-500/20'
+                                                    : 'bg-orange-500/10 text-[var(--color-text)] border-orange-500/20 hover:bg-orange-500/20'
                                             } hover:scale-105 cursor-default`}
                                         >
                                             {skill}
                                         </span>
                                     ))}
                                 </div>
+                                
+                                <div className="flex-grow"></div>
 
                                 
                                 <div className="flex items-center justify-center pt-4 mt-auto border-t border-[var(--color-primary)]/10">
                                     <div className="flex items-center gap-2 text-xs text-[var(--color-text-secondary)]">
+                                        <div className="w-1.5 h-1.5 bg-[var(--color-primary)] rounded-full"></div>
                                         <span className="font-medium">{group.skills.length} Technologies</span>
                                     </div>
                                 </div>

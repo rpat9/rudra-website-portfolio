@@ -3,7 +3,7 @@ const projectsData = [
         id: 1,
         title: "PropertyPulse (IN-PROGRESS)",
         description: "PropertyPulse is a full-stack real estate analytics platform designed to help investors evaluate property ROI, neighborhood trends, and location fit using machine learning, clustering, and predictive modeling. Built to solve the challenge of making data-driven real estate investment decisions with comprehensive market insights.",
-        image: "/coming-soon.png",
+        image: "/property-pulse-preview.png",
         technologies: ["Python", "FastAPI", "PostgreSQL", "Scikit-learn", "PyTorch", "React", "Tailwind CSS", "Java", "Spring Boot", "Microservices", "GCP"],
         github: "",
         liveLink: ""

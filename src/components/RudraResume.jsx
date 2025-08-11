@@ -25,6 +25,57 @@ export default function RudraResume() {
         }
     ];
 
+    const skillCategories = [
+        {
+            title: "Languages",
+            skills: resumeData.skills.languages,
+            color: "from-blue-500/10 to-blue-600/10",
+            borderColor: "border-blue-500/20",
+            hoverColor: "hover:bg-blue-500/20",
+            dotColor: "bg-blue-500"
+        },
+        {
+            title: "Frameworks/Libraries",
+            skills: resumeData.skills.frameworks,
+            color: "from-green-500/10 to-green-600/10",
+            borderColor: "border-green-500/20",
+            hoverColor: "hover:bg-green-500/20",
+            dotColor: "bg-green-500"
+        },
+        {
+            title: "Databases",
+            skills: resumeData.skills.databases,
+            color: "from-purple-500/10 to-purple-600/10",
+            borderColor: "border-purple-500/20",
+            hoverColor: "hover:bg-purple-500/20",
+            dotColor: "bg-purple-500"
+        },
+        {
+            title: "Cloud & DevOps",
+            skills: resumeData.skills.cloud,
+            color: "from-orange-500/10 to-orange-600/10",
+            borderColor: "border-orange-500/20",
+            hoverColor: "hover:bg-orange-500/20",
+            dotColor: "bg-orange-500"
+        },
+        {
+            title: "Tools",
+            skills: resumeData.skills.tools,
+            color: "from-teal-500/10 to-teal-600/10",
+            borderColor: "border-teal-500/20",
+            hoverColor: "hover:bg-teal-500/20",
+            dotColor: "bg-teal-500"
+        },
+        {
+            title: "Soft Skills",
+            skills: resumeData.skills.soft,
+            color: "from-pink-500/10 to-pink-600/10",
+            borderColor: "border-pink-500/20",
+            hoverColor: "hover:bg-pink-500/20",
+            dotColor: "bg-pink-500"
+        }
+    ];
+
     return (
         <section id="resume" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16 bg-[var(--color-bg)] relative overflow-hidden">
             
@@ -215,8 +266,6 @@ export default function RudraResume() {
                                         </div>
                                     ))}
                                 </div>
-
-                                
                             </div>
 
                             <div className="card border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/20 transition-all duration-300">
@@ -284,8 +333,6 @@ export default function RudraResume() {
                                         </div>
                                     ))}
                                 </div>
-
-                                
                             </div>
                             
                             <div className="card border border-[var(--color-primary)]/10 hover:border-[var(--color-primary)]/20 transition-all duration-300">
@@ -300,41 +347,24 @@ export default function RudraResume() {
                                 </div>
 
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                                    
-                                    <div className="space-y-4">
-                                        <h4 className="text-base sm:text-lg font-semibold text-[var(--color-text)] flex items-center gap-2">
-                                            <div className="w-2 h-2 bg-[var(--color-primary)] rounded-full"></div>
-                                            Technical Skills
-                                        </h4>
-                                        <div className="flex flex-wrap gap-2">
-                                            {resumeData.skills.technical.map((skill, i) => (
-                                                <span 
-                                                    key={i} 
-                                                    className="px-3 sm:px-4 py-2 bg-gradient-to-r from-[var(--color-primary)]/10 to-purple-600/10 border border-[var(--color-primary)]/20 text-[var(--color-text)] rounded-lg text-xs sm:text-sm font-medium hover:bg-[var(--color-primary)]/20 hover:scale-105 transition-all duration-300"
-                                                >
-                                                    {skill}
-                                                </span>
-                                            ))}
+                                    {skillCategories.map((category, index) => (
+                                        <div key={index} className="space-y-4">
+                                            <h4 className="text-base sm:text-lg font-semibold text-[var(--color-text)] flex items-center gap-2">
+                                                <div className={`w-2 h-2 ${category.dotColor} rounded-full`}></div>
+                                                {category.title}
+                                            </h4>
+                                            <div className="flex flex-wrap gap-2">
+                                                {category.skills.map((skill, i) => (
+                                                    <span 
+                                                        key={i} 
+                                                        className={`px-3 sm:px-4 py-2 bg-gradient-to-r ${category.color} border ${category.borderColor} text-[var(--color-text)] rounded-lg text-xs sm:text-sm font-medium ${category.hoverColor} hover:scale-105 transition-all duration-300`}
+                                                    >
+                                                        {skill}
+                                                    </span>
+                                                ))}
+                                            </div>
                                         </div>
-                                    </div>
-                                    
-                                    <div className="space-y-4">
-                                        <h4 className="text-base sm:text-lg font-semibold text-[var(--color-text)] flex items-center gap-2">
-                                            <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
-                                            Soft Skills
-                                        </h4>
-                                        <div className="flex flex-wrap gap-2">
-                                            {resumeData.skills.soft.map((skill, i) => (
-                                                <span 
-                                                    key={i} 
-                                                    className="px-3 sm:px-4 py-2 bg-gradient-to-r from-purple-600/10 to-pink-600/10 border border-purple-600/20 text-[var(--color-text)] rounded-lg text-xs sm:text-sm font-medium hover:bg-purple-600/20 hover:scale-105 transition-all duration-300"
-                                                >
-                                                    {skill}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-
+                                    ))}
                                 </div>
                             </div>
 
