@@ -191,7 +191,10 @@ export default function RudraResume() {
                                                         {edu.location}
                                                     </p>
                                                     <p className="text-[var(--color-text)] leading-relaxed text-sm sm:text-base">
-                                                        {edu.details}
+                                                        {edu.achievementDetails}
+                                                    </p>
+                                                    <p className="text-[var(--color-text)] leading-relaxed text-sm sm:text-base">
+                                                        {edu.courseworkDetails}
                                                     </p>
                                                 </div>
 

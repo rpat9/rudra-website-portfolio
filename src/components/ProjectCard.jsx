@@ -20,7 +20,7 @@ export default function ProjectCard({ project }) {
 
     return (
         <div
-            className="fade-in group relative h-[650px] card p-4 rounded-2xl transition-all duration-500 hosver:border-[var(--color-primary)] hover:transform hover:scale-[1.02] flex flex-col md:h-[550px]"
+            className="fade-in group relative h-[675px] card p-4 rounded-2xl transition-all duration-500 hosver:border-[var(--color-primary)] hover:transform hover:scale-[1.02] flex flex-col md:h-[575px]"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
@@ -144,6 +144,7 @@ export default function ProjectCard({ project }) {
                             </a>
                         )}
                     </div>
+
                 </div>
             </div>
         </div>

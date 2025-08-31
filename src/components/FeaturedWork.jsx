@@ -6,7 +6,7 @@ export default function FeaturedWork() {
 
     const featuredProject = {
         title: "Hometown Liquor E-Commerce Platform",
-        subtitle: "Freelance Software Engineer",
+        subtitle: "Full-Stack Web Developer",
         period: "May 1, 2025 - July 31, 2025",
         client: "Hometown Liquor, Braceville, IL",
         description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",

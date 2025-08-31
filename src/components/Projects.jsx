@@ -203,7 +203,7 @@ export default function Projects() {
                                         <button
                                             key={index}
                                             onClick={() => goToSlide(index)}
-                                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                            className={`cursor-pointer w-3 h-3 rounded-full transition-all duration-300 ${
                                                 currentIndex === index
                                                     ? 'bg-[var(--color-primary)] scale-110'
                                                     : 'bg-[var(--color-text)]/30 hover:bg-[var(--color-primary)]/50'

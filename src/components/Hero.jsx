@@ -84,7 +84,7 @@ export default function Hero() {
                                 href="https://github.com/rpat9" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 transform hover:scale-110"
+                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--button-text-color)] transition-all duration-300 transform hover:scale-110"
                             >
                                 <Github size={20} className="sm:w-6 sm:h-6" />
                             </a>
@@ -92,13 +92,13 @@ export default function Hero() {
                                 href="https://www.linkedin.com/in/rudrapatel09" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 transform hover:scale-110"
+                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--button-text-color)] transition-all duration-300 transform hover:scale-110"
                             >
                                 <Linkedin size={20} className="sm:w-6 sm:h-6" />
                             </a>
                             <a 
                                 href="mailto:rudrap26176@gmail.com"
-                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 transform hover:scale-110"
+                                className="p-2 sm:p-3 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--button-text-color)] transition-all duration-300 transform hover:scale-110"
                             >
                                 <Mail size={20} className="sm:w-6 sm:h-6" />
                             </a>
