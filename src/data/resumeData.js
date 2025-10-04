@@ -22,9 +22,9 @@ const resumeData = {
       description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
         "Engineered an e-commerce platform for 750+ products, using React, Tailwind, and Firebase, with mobile-first responsive design and real-time inventory validation",
-        "Optimized database performance, leading to a 30% cost reduction, by implementing a pagination system that limits Firebase reads to 25 products per page while maintaining <200ms search performance with Algolia",
-        "Enhanced user experience with a search-first UX design and cost-optimized loading, resulting in a 40% improvement in product discovery",
-        "Developed a complete order management system using SendGrid email automation for order confirmation and real-time inventory tracking with automated stock alerts",
+        "Optimized search performance and reduced costs by implementing a pagination and caching system with Algolia, maintaining sub-200ms search times while achieving a 30% reduction in database-related operational costs.",
+        "Improved customer conversion and product discovery by implementing a search-centric UX design, resulting in a 40% increase in product visibility and a 25% rise in user conversion rates",
+        "Automated business operations by developing a real-time order management system, which reduced out-of-stock incidents and enhanced customer satisfaction through automated email confirmations",
       ]
     },
   ],
@@ -53,9 +53,10 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "Educational quiz platform that allows users to create, publish, and take customizable quizzes with personalized feedback and difficulty levels.",
       achievements: [
-        "Led a team of 4 in architectural refactoring of 7000+ line React application, reducing load times from 886ms to 147ms through systematic refactoring performance optimization",
-        "Implemented unified design system and state management, reducing complexity by 33% while creating reusable component libraries that accelerated feature development",
-        "Built a service layer architecture, migrating business logic from 40+ components, establishing separation of concerns and improving application maintenance"
+        "Cut application load times by over 80% from (886ms to 147ms) by leading a 4-person team in a full-scale architectural refactoring of a 7,000-line React codebase",
+        "Reduced codebase complexity by 33% by implementing a unified design system and state management, enabling faster and more consistent feature development",
+        "Enhanced maintainability and scalability by building a service layer architecture, successfully migrating business logic from 40+ components to establish a clear separation of concerns",
+        "Optimized Firebase backend reducing API calls by 83% and dashboard load times by 6x (less than 5s) through query batching and intelligent caching"
       ]
     },
 
@@ -67,9 +68,9 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "AI-Powered Recipe Generator using Claude API, serving 200+ unique recipes to users.",
       achievements: [
-        "Built AI-powered recipe platform using Claude API, React, Node.js, delivering custom recipes within 5s of ingredient submission with Firebase authentication and data persistence",
-        "Engineered comprehensive input validation with 3-layer error handling using regex patterns and providing real-time user feedback",
-        "Simplified deployment with Docker containerization, reducing deployment time by 80% through automated CI/CD pipeline on AWS"
+        "Built AI-powered recipe platform using Claude API, React, Node.js, delivering custom recipes within 5s through optimized prompt engineering and async request handling",
+        "Engineered 3-layer error handling with input validation and real-time feedback ensuring reliable AI responses",
+        "Simplified deployment with Docker containerization, reducing deployment time by 80% through automated CI/CD pipeline on AWS for faster feature releases"
       ]
     }
   ],
@@ -79,10 +80,9 @@ const resumeData = {
     frameworks: ["React", "Node.js", "Express.js", "Tailwind", "Spring Boot", "FastAPI"],
     databases: ["MySQL", "Firestore", "MongoDB", "PostgreSQL", "Supabase"],
     cloud: ["AWS", "GCP", "Azure", "Docker", "GitHub Actions", "CI/CD"],
-    tools: ["Git", "Maven", "JWT Authentication", "REST APIs", "Microservices", "Agile", "Containerization", "Event-Driven Architecture"],
+    tools: ["Git", "Maven", "JWT Authentication", "REST APIs", "Microservices", "Agile", "Containerization", "Event-Driven Architecture", "Object-Oriented Design"],
     soft: ["Problem Solving", "Team Collaboration", "Communication", "Agile Development", "Time Management", "Leadership", "Project Management"]
   }
 
 };
-
 export default resumeData;

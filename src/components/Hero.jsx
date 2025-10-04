@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
-import rudraPic from "../assets/rudra-pic.JPG";
+import rudraPic from "../assets/rudra-pic-2.jpg";
 import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
@@ -50,12 +50,11 @@ export default function Hero() {
                         </div>
 
                         <p className="text-base sm:text-lg md:text-xl text-[var(--color-text)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                            I build full-stack applications with
-                            <span className="text-[var(--color-primary)] font-semibold"> Python, React, and Node.js. </span> 
+                            I build full-stack, AI-powered applications with
+                            <span className="text-[var(--color-primary)] font-semibold"> Python, React, Node.js, and Spring Boot. </span> 
                             Experienced in cloud deployment
-                            <span className="text-[var(--color-primary)] font-semibold"> (AWS, Azure, GCP), database design,</span> and collaborative development using
-                            <span className="text-[var(--color-primary)] font-semibold"> Git and Agile. </span>
-                            I deliver reliable, maintainable systems that support 
+                            <span className="text-[var(--color-primary)] font-semibold"> (AWS, Azure, GCP), microservices, and DevOps(Docker, CI/CD)</span>. Skilled in
+                            <span className="text-[var(--color-primary)] font-semibold"> database design, security, and Agile teamwork</span>. I deliver reliable, maintainable systems that support 
                             <span className="text-[var(--color-primary)] font-semibold"> business growth and operational efficiency</span>.
                         </p>
 
