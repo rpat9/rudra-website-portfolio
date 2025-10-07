@@ -190,7 +190,7 @@ export default function RudraResume() {
                                                     <p className="text-[var(--color-text)]/60 text-sm mb-2">
                                                         {edu.location}
                                                     </p>
-                                                    <p className="text-[var(--color-text)] leading-relaxed text-sm sm:text-base">
+                                                    <p className="text-[var(--color-text)] leading-relaxed text-sm sm:text-base mb-2">
                                                         {edu.achievementDetails}
                                                     </p>
                                                     <p className="text-[var(--color-text)] leading-relaxed text-sm sm:text-base">

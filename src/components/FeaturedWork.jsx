@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { ExternalLink, Code, Users, TrendingUp, Award, Clock, CheckCircle, ArrowRight } from "lucide-react";
+import { ExternalLink, Code, DollarSign, Users, TrendingUp, Award, Clock, CheckCircle, ArrowRight } from "lucide-react";
 
 export default function FeaturedWork() {
     const [isVisible, setIsVisible] = useState(true);
 
     const featuredProject = {
         title: "Hometown Liquor E-Commerce Platform",
-        subtitle: "Full-Stack Web Developer",
+        subtitle: "Freelance Software Engineer",
         period: "May 1, 2025 - July 31, 2025",
         client: "Hometown Liquor, Braceville, IL",
         description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
@@ -15,10 +15,10 @@ export default function FeaturedWork() {
         
         highlights: [
             {
-                icon: Users,
-                metric: "750+",
-                label: "Products Managed",
-                description: "Complete inventory system"
+                icon: DollarSign,
+                metric: "$40,000+",
+                label: "Monthly Sales",
+                description: "Doubled Monthly Sales"
             },
             {
                 icon: TrendingUp,
@@ -27,10 +27,10 @@ export default function FeaturedWork() {
                 description: "Lightning-fast product discovery"
             },
             {
-                icon: Code,
-                metric: "15+",
-                label: "Reusable Components",
-                description: "40% faster development"
+                icon: Users,
+                metric: "750+",
+                label: "Products Managed",
+                description: "Complete inventory system"
             },
             {
                 icon: Award,
@@ -41,12 +41,12 @@ export default function FeaturedWork() {
         ],
 
         achievements: [
-            "Engineered production-ready e-commerce platform with real-time product browsing and order management",
-            "Built scalable backend with Firestore handling 750+ products and secure user authentication",
-            "Integrated Algolia search with sub-200ms responses, typo-tolerance, and advanced filtering",
-            "Designed comprehensive admin dashboard with sales reporting and inventory control",
-            "Automated product curation with Python scripts and manual review workflows",
-            "Implemented role-based access control and real-time notification systems"
+            "Doubled monthly sales to $40,000 by deploying full-stack e-commerce platform for 750+ products",
+            "Engineered Algolia search pipeline achieving sub-200ms query latency and 30% reduction in database load",
+            "Boosted customer conversion by 25% and product discovery by 40% through search-optimized, mobile-first UX",
+            "Automated inventory and order management, eliminating stockouts and reducing manual operations by 80%",
+            "Built scalable Firebase backend with role-based access control and real-time notifications",
+            "Designed comprehensive admin dashboard with sales reporting and inventory analytics"
         ],
 
         techStack: {

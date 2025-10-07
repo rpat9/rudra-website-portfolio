@@ -1,11 +1,11 @@
 const projectsData = [
     {
         id: 1,
-        title: "PropertyPulse (IN-PROGRESS)",
-        description: "PropertyPulse is a full-stack real estate analytics platform designed to help investors evaluate property ROI, neighborhood trends, and location fit using machine learning, clustering, and predictive modeling. Built to solve the challenge of making data-driven real estate investment decisions with comprehensive market insights.",
-        image: "/property-pulse-preview.png",
-        technologies: ["Python", "PostgreSQL", "Scikit-learn", "React.js", "Tailwind CSS", "Java", "Spring Boot", "Microservices", "Google Cloud Platform"],
-        github: "https://github.com/rpat9/property-pulse",
+        title: "ExoViz (IN-PROGRESS)",
+        description: "ExoViz is an AI-powered exoplanet exploration platform that transforms NASA's vast planetary database into an interactive, visual experience. It combines real-time data from NASA's Exoplanet Archive with machine learning predictions and stunning 3D visualizations to help users discover, analyze, and understand planets beyond our solar system.",
+        image: "/coming-soon.png",
+        technologies: ["React.js", "TypeScript", "Three.js", "Tailwind CSS", "Java", "Fast API", "Docker", "Microservices", "Google Cloud Platform"],
+        github: "",
         liveLink: ""
     },
 

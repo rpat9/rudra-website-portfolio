@@ -51,7 +51,7 @@ export default function Hero() {
 
                         <p className="text-base sm:text-lg md:text-xl text-[var(--color-text)] leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             I build full-stack, AI-powered applications with
-                            <span className="text-[var(--color-primary)] font-semibold"> Python, React, Node.js, and Spring Boot. </span> 
+                            <span className="text-[var(--color-primary)] font-semibold"> Python, React, Node.js, and Java. </span> 
                             Experienced in cloud deployment
                             <span className="text-[var(--color-primary)] font-semibold"> (AWS, Azure, GCP), microservices, and DevOps(Docker, CI/CD)</span>. Skilled in
                             <span className="text-[var(--color-primary)] font-semibold"> database design, security, and Agile teamwork</span>. I deliver reliable, maintainable systems that support 

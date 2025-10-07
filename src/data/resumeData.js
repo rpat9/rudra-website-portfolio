@@ -4,10 +4,10 @@ const resumeData = {
     {
       id: 1,
       institution: "Lewis University",
-      degree: "Bachelor of Science in Computer Science, Artificial Intelligence Concentration",
+      degree: "B.S. Computer Science, Artificial Intelligence Concentration",
       period: "Expected May 2026",
       location: "Romeoville, IL",
-      achievementDetails: "GPA: 3.87/4.0, Presidential Scholarship Recipient, Dean's List 2023-2025",
+      achievementDetails: "GPA: 3.9/4.0, Presidential Scholarship Recipient, Dean's List 2023-2025",
       courseworkDetails: "Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Systems, Object-Oriented Programming, Artificial Intelligence, Machine Learning"
     }
   ],
@@ -16,15 +16,15 @@ const resumeData = {
     {
       id: 1,
       company: "Hometown Liquor",
-      role: "Full-Stack Web Developer",
+      role: "Freelance Software Engineer",
       period: "May 1, 2025 - July 31, 2025",
       location: "Braceville, IL",
       description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
-        "Engineered an e-commerce platform for 750+ products, using React, Tailwind, and Firebase, with mobile-first responsive design and real-time inventory validation",
-        "Optimized search performance and reduced costs by implementing a pagination and caching system with Algolia, maintaining sub-200ms search times while achieving a 30% reduction in database-related operational costs.",
-        "Improved customer conversion and product discovery by implementing a search-centric UX design, resulting in a 40% increase in product visibility and a 25% rise in user conversion rates",
-        "Automated business operations by developing a real-time order management system, which reduced out-of-stock incidents and enhanced customer satisfaction through automated email confirmations",
+        "Doubled monthly sales to $40,000 by building and deploying a full-stack e-commerce platform for 750+ products using React, Tailwind, and Firebase",
+        "Engineered a high-performance Algolia search pipeline, achieving sub-200ms query latency and cutting database load by 30%",
+        "Boosted customer conversion by 25% and product discovery by 40% by implementing a search-optimized, mobile-first UX",
+        "Automated inventory and order management, eliminating out of stock incidents and reducing manual operations by over 80%",
       ]
     },
   ],
@@ -32,16 +32,16 @@ const resumeData = {
   projects: [
     {
       id: 1,
-      company: "Property Pulse",
+      company: "Exoviz",
       role: "Personal Project",
-      period: "July 2025 - Present",
+      period: "October 2025 - Present",
       location: "Romeoville, IL",
-      description: "Real Estate analytics platform to help investors evaluate property ROI, neighborhood trends, and location fit for various investments.",
+      description: "AI-powered exoplanet exploration platform that transforms NASA's vast planetary database into an interactive, visual experience.",
       achievements: [
-        "Built AI-powered real estate investment platform helping users evaluate properties and make data-driven investment decisions using React/TypeScript, Spring Boot, PostgreSQL, and ML integration",
-        "Implemented Spring Security, JWT Authentication and role-based access control across 8+ REST endpoints for property CRUD operations, and market data retrieval",
-        "Engineered multi-service architecture supporting microservices deployment, with ML pipeline integration for investment scoring, price prediction, and automated market trend analysis",
-        "Created responsive mobile-first interface ensuring optimal user experience across mobile, tablet, and desktop platforms"
+        "Architecting a full-stack platform to process and visualize 5,000+ NASA exoplanet records, integrating AI-driven habitability scoring and interactive 3D rendering",
+        "Engineering a 3-service backend (Spring Boot, Fast API, Redis) to target a 30% reduction in database load and sub-200ms query times through caching and optimization",
+        "Developing a Scikit-learn ML pipeline to classify planet habitability, targeting 85%+ model accuracy for deployment via a dedicated microservice API",
+        "Building a Three.js visualization engine designed to sustain 60fps performance using instanced rendering and level-of-detail (LOD) optimizations"
       ]
     },
 
