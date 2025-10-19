@@ -45,16 +45,16 @@ export default function FeaturedWork() {
             "Engineered Algolia search pipeline achieving sub-200ms query latency and 30% reduction in database load",
             "Boosted customer conversion by 25% and product discovery by 40% through search-optimized, mobile-first UX",
             "Automated inventory and order management, eliminating stockouts and reducing manual operations by 80%",
-            "Built scalable Firebase backend with role-based access control and real-time notifications",
+            "Built scalable FastAPI backend with role-based access control and real-time notifications",
             "Designed comprehensive admin dashboard with sales reporting and inventory analytics"
         ],
 
         techStack: {
-            frontend: ["React", "Tailwind CSS", "JavaScript ES6+"],
-            backend: ["Firebase", "Firestore", "Firebase Auth"],
-            "Search And Emails": ["Algolia Search API", "SendGrid API", "Firebase Cloud Functions"],
+            frontend: ["React", "Tailwind CSS", "TypeScript"],
+            backend: ["PostgreSQL", "FastAPI", "Supabase"],
+            "Search And Emails": ["Algolia Search API", "Resend API"],
             automation: ["Python", "Custom Scripts"],
-            deployment: ["Vercel", "CI/CD Pipeline"]
+            deployment: ["Vercel", "Railway", "CI/CD Pipeline"]
         }
     };
 

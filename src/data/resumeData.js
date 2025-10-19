@@ -21,10 +21,10 @@ const resumeData = {
       location: "Braceville, IL",
       description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
-        "Doubled monthly sales to $40,000 by building and deploying a full-stack e-commerce platform for 750+ products using React, Tailwind, and Firebase",
-        "Engineered a high-performance Algolia search pipeline, achieving sub-200ms query latency and cutting database load by 30%",
-        "Boosted customer conversion by 25% and product discovery by 40% by implementing a search-optimized, mobile-first UX",
-        "Automated inventory and order management, eliminating out of stock incidents and reducing manual operations by over 80%",
+        "Doubled monthly revenue to $40,000 by building and deploying a full-stack e-commerce platform managing 750+ products using React, TypeScript, FastAPI and PostgreSQL",
+        "Increased customer conversion by 25% through implementation of mobile-first UX and search-optimized product discovery features",
+        "Reduced database load by 30% by engineering high-performance Algolia search pipeline achieving sub-200ms query latency across the catalog",
+        "Engineered a multi-service backend with RESTful APIs and comprehensive testing ensuring reliability across services handling real-time inventory and orders.",
       ]
     },
   ],
@@ -78,7 +78,7 @@ const resumeData = {
   skills: {
     languages: ["Python", "Java", "JavaScript", "TypeScript", "HTML/CSS", "SQL"],
     frameworks: ["React", "Node.js", "Express.js", "Tailwind", "Spring Boot", "FastAPI"],
-    databases: ["MySQL", "Firestore", "MongoDB", "PostgreSQL", "Supabase"],
+    databases: ["MySQL", "PostgreSQL", "MongoDB", "Supabase", "Firesbase"],
     cloud: ["AWS", "GCP", "Azure", "Docker", "GitHub Actions", "CI/CD"],
     tools: ["Git", "Maven", "JWT Authentication", "REST APIs", "Microservices", "Agile", "Containerization", "Event-Driven Architecture", "Object-Oriented Design"],
     soft: ["Problem Solving", "Team Collaboration", "Communication", "Agile Development", "Time Management", "Leadership", "Project Management"]
