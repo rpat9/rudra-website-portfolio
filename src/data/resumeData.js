@@ -8,7 +8,7 @@ const resumeData = {
       period: "Expected May 2026",
       location: "Romeoville, IL",
       achievementDetails: "GPA: 3.9/4.0, Presidential Scholarship Recipient, Dean's List 2023-2025",
-      courseworkDetails: "Relevant Coursework: Data Structures & Algorithms, Software Engineering, Database Systems, Object-Oriented Programming, Artificial Intelligence, Machine Learning"
+      courseworkDetails: "Relevant Coursework: Data Structures and Algorithms, Object Oriented Programming, Software Engineering, Artificial Intelligence, Machine Learning, Linear Algebra, Discrete Mathematics"
     }
   ],
   
@@ -21,12 +21,25 @@ const resumeData = {
       location: "Braceville, IL",
       description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
       achievements: [
-        "Doubled monthly revenue to $40,000 by building and deploying a full-stack e-commerce platform managing 750+ products using React, TypeScript, FastAPI and PostgreSQL",
-        "Increased customer conversion by 25% through implementation of mobile-first UX and search-optimized product discovery features",
-        "Reduced database load by 30% by engineering high-performance Algolia search pipeline achieving sub-200ms query latency across the catalog",
-        "Engineered a multi-service backend with RESTful APIs and comprehensive testing ensuring reliability across services handling real-time inventory and orders.",
+        "Increased monthly revenue by 45% to $40,000 by developing and deploying a full-stack e-commerce platform using React, TypeScript, FastAPI, and PostgreSQL for 750+ products",
+        "Raised customer conversion rate by 25% by designing a mobile-first UX with search-optimized product discovery built on indexed queries achieving sub-200ms response times",
+        "Achieved 99.9% backend reliability by implementing 35+ RESTful FastAPI endpoints with Supabase PostgreSQL, modular routing, input validation, and automated testing",
+        "Reduced database load by 30% by integrating Zustand-based global state management that eliminated redundant API calls and synchronized cart data in real time",
       ]
     },
+    {
+      id: 2,
+      company: "QuizMaster",
+      role: "Lead Developer (Capstone)",
+      location: "Romeoville, IL",
+      period: "August 2025 - Present",
+      description: "Leading the development of an interactive quiz application designed to enhance learning, give real-time feedback, and track user progress through engaging quizzes and analytics.",
+      achievements: [
+        "Led 4-person team in refactoring a 30,000-line production React application, cutting load times by 83% (886ms to 147ms) and reducing codebase complexity by 33%",
+        "Optimized Firebase backend reducing API calls by 70% and dashboard load times by 6x (under 5 seconds) through query batching and intelligent caching strategies",
+        "Improved scalability by migrating business logic from 40+ components into a modular service layer, accelerating feature development velocity by 40%"
+      ]
+    }
   ],
 
   projects: [
@@ -38,50 +51,35 @@ const resumeData = {
       location: "Romeoville, IL",
       description: "AI-powered exoplanet exploration platform that transforms NASA's vast planetary database into an interactive, visual experience.",
       achievements: [
-        "Architecting a full-stack platform to process and visualize 5,000+ NASA exoplanet records, integrating AI-driven habitability scoring and interactive 3D rendering",
-        "Engineering a 3-service backend (Spring Boot, Fast API, Redis) to target a 30% reduction in database load and sub-200ms query times through caching and optimization",
-        "Developing a Scikit-learn ML pipeline to classify planet habitability, targeting 85%+ model accuracy for deployment via a dedicated microservice API",
-        "Building a Three.js visualization engine designed to sustain 60fps performance using instanced rendering and level-of-detail (LOD) optimizations"
+        "Built a full-stack platform that visualizes 5,000+ NASA exoplanet records with AI-driven habitability scoring and interactive 3D rendering using Three.js",
+        "Designed a 3-service microservices backend using Spring Boot, FastAPI, and Redis to reduce query latency by 70% and improve database efficiency",
+        "Developed an ML classification pipeline using Scikit-learn to predict planet habitability with 82% accuracy, deployed as a standalone microservice",
+        "Implemented a Three.js 3D visualization engine achieving 60fps performance through instanced rendering and level-of-detail optimizations"
       ]
     },
 
     {
       id: 2,
-      company: "QuizMaster",
-      role: "Capstone Team Project",
-      period: "August 2025 - Present",
-      location: "Romeoville, IL",
-      description: "Educational quiz platform that allows users to create, publish, and take customizable quizzes with personalized feedback and difficulty levels.",
-      achievements: [
-        "Cut application load times by over 80% from (886ms to 147ms) by leading a 4-person team in a full-scale architectural refactoring of a 7,000-line React codebase",
-        "Reduced codebase complexity by 33% by implementing a unified design system and state management, enabling faster and more consistent feature development",
-        "Enhanced maintainability and scalability by building a service layer architecture, successfully migrating business logic from 40+ components to establish a clear separation of concerns",
-        "Optimized Firebase backend reducing API calls by 83% and dashboard load times by 6x (less than 5s) through query batching and intelligent caching"
-      ]
-    },
-
-    {
-      id: 3,
       company: "MasterChef Claude",
       role: "Personal Project",
       period: "April 2025 - May 2025",
       location: "Romeoville, IL",
       description: "AI-Powered Recipe Generator using Claude API, serving 200+ unique recipes to users.",
       achievements: [
-        "Built AI-powered recipe platform using Claude API, React, Node.js, delivering custom recipes within 5s through optimized prompt engineering and async request handling",
-        "Engineered 3-layer error handling with input validation and real-time feedback ensuring reliable AI responses",
-        "Simplified deployment with Docker containerization, reducing deployment time by 80% through automated CI/CD pipeline on AWS for faster feature releases"
+        "Built an AI-powered recipe platform using Claude API and React that delivers custom recipes within 5 seconds through optimized prompt engineering and asynchronous request handling",
+        "Implemented 3-layer error handling with input validation and real-time feedback, ensuring 99% successful API response rate",
+        "Simplified deployment with Docker containers and automated CI/CD pipeline on AWS, reducing deployment time by 80%"
       ]
     }
   ],
     
   skills: {
-    languages: ["Python", "Java", "JavaScript", "TypeScript", "HTML/CSS", "SQL"],
-    frameworks: ["React", "Node.js", "Express.js", "Tailwind", "Spring Boot", "FastAPI"],
-    databases: ["MySQL", "PostgreSQL", "MongoDB", "Supabase", "Firesbase"],
-    cloud: ["AWS", "GCP", "Azure", "Docker", "GitHub Actions", "CI/CD"],
-    tools: ["Git", "Maven", "JWT Authentication", "REST APIs", "Microservices", "Agile", "Containerization", "Event-Driven Architecture", "Object-Oriented Design"],
-    soft: ["Problem Solving", "Team Collaboration", "Communication", "Agile Development", "Time Management", "Leadership", "Project Management"]
+    languages: ["Python", "Java", "JavaScript/TypeScript", "C/C++", "HTML/CSS", "SQL"],
+    frameworks: ["React", "Spring Boot", "FastAPI", "Node.js", "Express.js", "Tailwind", "Bootstrap"],
+    cloudAndDevops: ["AWS", "GCP", "Azure", "Docker", "CI/CD", "GitHub Actions"],
+    databases: ["PostgreSQL", "MongoDB", "Redis", "Firebase", "MySQL", "NoSQL"],
+    mlAndData: ["Scikit-learn", "TensorFlow", "NumPy", "Pandas", "Matplotlib", "Data Visualization", "Containerization", "Event-Driven Architecture", "Object-Oriented Design"],
+    toolsAndConcepts: ["Git", "Agile", "System Design", "Agile Development", "REST APIs", "Microservices", "JWT Authentication"]
   }
 
 };

@@ -35,7 +35,7 @@ export default function RudraResume() {
             dotColor: "bg-blue-500"
         },
         {
-            title: "Frameworks/Libraries",
+            title: "Frameworks",
             skills: resumeData.skills.frameworks,
             color: "from-green-500/10 to-green-600/10",
             borderColor: "border-green-500/20",
@@ -52,23 +52,23 @@ export default function RudraResume() {
         },
         {
             title: "Cloud & DevOps",
-            skills: resumeData.skills.cloud,
+            skills: resumeData.skills.cloudAndDevops,
             color: "from-orange-500/10 to-orange-600/10",
             borderColor: "border-orange-500/20",
             hoverColor: "hover:bg-orange-500/20",
             dotColor: "bg-orange-500"
         },
         {
-            title: "Tools",
-            skills: resumeData.skills.tools,
+            title: "ML & Data",
+            skills: resumeData.skills.mlAndData,
             color: "from-teal-500/10 to-teal-600/10",
             borderColor: "border-teal-500/20",
             hoverColor: "hover:bg-teal-500/20",
             dotColor: "bg-teal-500"
         },
         {
-            title: "Soft Skills",
-            skills: resumeData.skills.soft,
+            title: "Tools & Concepts",
+            skills: resumeData.skills.toolsAndConcepts,
             color: "from-pink-500/10 to-pink-600/10",
             borderColor: "border-pink-500/20",
             hoverColor: "hover:bg-pink-500/20",

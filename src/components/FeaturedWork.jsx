@@ -18,7 +18,7 @@ export default function FeaturedWork() {
                 icon: DollarSign,
                 metric: "$40,000+",
                 label: "Monthly Sales",
-                description: "Doubled Monthly Sales"
+                description: "Increase of 45% in revenue"
             },
             {
                 icon: TrendingUp,
@@ -41,11 +41,11 @@ export default function FeaturedWork() {
         ],
 
         achievements: [
-            "Doubled monthly sales to $40,000 by deploying full-stack e-commerce platform for 750+ products",
-            "Engineered Algolia search pipeline achieving sub-200ms query latency and 30% reduction in database load",
-            "Boosted customer conversion by 25% and product discovery by 40% through search-optimized, mobile-first UX",
+            "Increased monthly revenue by 45% to $40,000 by developing and deploying a full-stack e-commerce platform using React, TypeScript, FastAPI, and PostgreSQL for 750+ products",
+            "Implemented PostgreSQL full-text search and real-time analytics, resulting in sub-200ms query performance and enhanced operational efficiency achieving 30% reduction in database load",
+            "Raised customer conversion rate by 25% by designing a mobile-first UX with search-optimized product discovery built on indexed queries achieving sub-200ms response times",
             "Automated inventory and order management, eliminating stockouts and reducing manual operations by 80%",
-            "Built scalable FastAPI backend with role-based access control and real-time notifications",
+            "Achieved 99.9% backend reliability by implementing 35+ RESTful FastAPI endpoints with Supabase PostgreSQL, modular routing, input validation, and automated testing",
             "Designed comprehensive admin dashboard with sales reporting and inventory analytics"
         ],
 

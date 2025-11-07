@@ -32,7 +32,7 @@ const projectsData = [
     {
         id: 4,
         title: "QuizMaster",
-        description: "QuizMaster is an interactive web application for creating, sharing, and taking customizable quizzes and flashcards, designed to make learning engaging for both students and educators. In this inherited capstone project, I led a team of 4 engineers to build features like role-based access, a collaborative dashboard, tools for tracking learning progress and managing custom content, flexible study modes, and visually appealing, easy-to-use interface.",
+        description: "QuizMaster is an interactive web application for creating, sharing, and taking customizable quizzes and flashcards, designed to make learning engaging for both students and educators. I led a team of 4 engineers to maintain and build features like role-based access, a collaborative dashboard, tools for tracking learning progress and managing custom content, flexible study modes, and visually appealing, easy-to-use interface.",
         image: "/quizmaster-preview.png",
         technologies: ["JavaScript", "React.js", "Tailwind CSS", "Node.js", "Google Cloud Platform"],
         github: "https://github.com/QuizMasterInc/QuizMaster",
