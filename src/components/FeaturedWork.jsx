@@ -11,7 +11,7 @@ export default function FeaturedWork() {
         client: "Hometown Liquor, Braceville, IL",
         description: "Developed a complete production-ready e-commerce platform from concept to deployment, transforming a local liquor store's digital presence with modern web technologies and seamless user experience.",
         image: "/hometown-liquor-preview.png",
-        technologies: ["React", "Firebase", "Algolia", "Python", "Tailwind CSS", "Vercel"],
+        technologies: ["React", "FastAPI", "PostgreSQL", "Python", "Tailwind CSS", "Vercel"],
         
         highlights: [
             {
@@ -52,9 +52,9 @@ export default function FeaturedWork() {
         techStack: {
             frontend: ["React", "Tailwind CSS", "TypeScript"],
             backend: ["PostgreSQL", "FastAPI", "Supabase"],
-            "Search And Emails": ["Algolia Search API", "Resend API"],
+            "Search And Emails": ["PostgreSQL Full-Text-Search (tsvector)", "Resend API"],
             automation: ["Python", "Custom Scripts"],
-            deployment: ["Vercel", "Railway", "CI/CD Pipeline"]
+            deployment: ["Vercel", "Railway", "CI/CD Pipelines"]
         }
     };
 

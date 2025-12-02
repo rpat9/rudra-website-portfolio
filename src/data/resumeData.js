@@ -76,10 +76,10 @@ const resumeData = {
   skills: {
     languages: ["Python", "Java", "JavaScript/TypeScript", "C/C++", "HTML/CSS", "SQL"],
     frameworks: ["React", "Spring Boot", "FastAPI", "Node.js", "Express.js", "Tailwind", "Bootstrap"],
-    cloudAndDevops: ["AWS", "GCP", "Azure", "Docker", "CI/CD", "GitHub Actions"],
+    cloudAndDevops: ["AWS", "GCP", "Azure", "Docker", "CI/CD", "GitHub Actions", "Containerization"],
     databases: ["PostgreSQL", "MongoDB", "Redis", "Firebase", "MySQL", "NoSQL"],
-    mlAndData: ["Scikit-learn", "TensorFlow", "NumPy", "Pandas", "Matplotlib", "Data Visualization", "Containerization", "Event-Driven Architecture", "Object-Oriented Design"],
-    toolsAndConcepts: ["Git", "Agile", "System Design", "Agile Development", "REST APIs", "Microservices", "JWT Authentication"]
+    mlAndData: ["Scikit-learn", "TensorFlow", "NumPy", "Pandas", "Matplotlib", "Data Visualization"],
+    toolsAndConcepts: ["Git", "Agile", "System Design", "Agile Development", "REST APIs", "Microservices", "JWT Authentication", "Object-Oriented Design"]
   }
 
 };
