@@ -32,7 +32,7 @@ const resumeData = {
       company: "QuizMaster",
       role: "Lead Developer (Capstone)",
       location: "Romeoville, IL",
-      period: "August 2025 - Present",
+      period: "Aug. 2025 - Dec. 2025",
       description: "Leading the development of an interactive quiz application designed to enhance learning, give real-time feedback, and track user progress through engaging quizzes and analytics.",
       achievements: [
         "Led 4-person team in refactoring a 30,000-line production React application, cutting load times by 83% (886ms to 147ms) and reducing codebase complexity by 33%",

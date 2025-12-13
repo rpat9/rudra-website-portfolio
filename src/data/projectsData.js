@@ -16,7 +16,7 @@ const projectsData = [
         image: "/masterchef-claude-preview.png",
         technologies: ["React", "Tailwind CSS", "Firebase", "AWS", "Docker", "Claude API"],
         github: "https://github.com/rpat9/MasterChef-Claude",
-        liveLink: "https://q9g97zpqp2.us-east-2.awsapprunner.com/"
+        liveLink: ""
     },
     
     {
