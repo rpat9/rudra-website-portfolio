@@ -45,7 +45,7 @@ export default function FeaturedWork() {
             "Implemented PostgreSQL full-text search and real-time analytics, resulting in sub-200ms query performance and enhanced operational efficiency achieving 30% reduction in database load",
             "Raised customer conversion rate by 25% by designing a mobile-first UX with search-optimized product discovery built on indexed queries achieving sub-200ms response times",
             "Automated inventory and order management, eliminating stockouts and reducing manual operations by 80%",
-            "Achieved 99.9% backend reliability by implementing 35+ RESTful FastAPI endpoints with Supabase PostgreSQL, modular routing, input validation, and automated testing",
+            "Achieved 99.9% backend reliability by implementing 85+ RESTful FastAPI endpoints with Supabase PostgreSQL, modular routing, input validation, and automated testing",
             "Designed comprehensive admin dashboard with sales reporting and inventory analytics"
         ],
 
@@ -54,7 +54,7 @@ export default function FeaturedWork() {
             backend: ["PostgreSQL", "FastAPI", "Supabase"],
             "Search And Emails": ["PostgreSQL Full-Text-Search (tsvector)", "Resend API"],
             automation: ["Python", "Custom Scripts"],
-            deployment: ["Vercel", "Railway", "CI/CD Pipelines"]
+            deployment: ["Vercel", "Railway", "CI/CD Pipelines", "Docker"]
         }
     };
 
